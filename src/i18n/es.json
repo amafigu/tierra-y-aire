@@ -1,0 +1,201 @@
+{
+  "pages": {
+    "about": {
+      "aboutPageUpperSectionTitle": "Sobre Tierra y Aire",
+      "aboutPageUpperSectionText": "Establecido desde 2018, el espíritu de Tierra y Aire siempre ha sido el de integración y intercambio. Hoy nos hemos convertido en la opción popular para la educación en percusión al ser la escuela especializada más grande de Rosario.",
+      "firstImageCard": "Buscamos inspirar y educar a los alumnos utilizando su propia musicalidad y desde allí ofrecer recursos de educación de percusión contemporánea.",
+      "ourPhilosophyTitle": "Nuestra Filosofía",
+      "ourPhilosophySubtitle": "El conocimiento no debe aprovecharse únicamente con trabajo duro",
+      "ourPhilosophyFirst": "En Tierra y Aire, creemos que la pasión es la pieza fundamental para el éxito de cada estudiante. Por eso motivamos a nuestra comunidad haciendo performances en vivo, las cuales se logran en corto plazo. A través de la pasión surge la curiosidad, y es esta misma curiosidad la que estimularía al estudiante a trabajar y aprender continuamente más en su jornada.",
+      "ourPhilosophySecond": "Es nuestra responsabilidad, como educadores, alimentar esa curiosidad en cada estudiante; nutriendo, guiando y motivando constantemente a cada estudiante para que eventualmente alcance sus objetivos musicales individuales y colectivos.",
+      "inspirationAndEducation": {
+        "title": "Inspiración y educación",
+        "firstParagraph": "En Tierra y Aire creemos que el latido de la percusión comienza con la inspiración. Nuestros programas están creados con creatividad, innovación, improvisación y practica. Garantizamos el equilibrio adecuado para sus necesidades específicas en cada nivel musical.",
+        "secondParagraph": "Nuestro método ha sido cuidadosamente diseñado teniendo en cuenta sus objetivos: damos prioridad a la musicalidad de los estudiantes tocando percusión desde el primer día y actuando en vivo a corto plazo."
+      }
+    },
+    "concerts": {
+      "title": "Conciertos"
+    },
+    "courses": {
+      "ensemble": {
+        "title": "Práctica de ensamble",
+        "subtitle": "compartir la música",
+        "description": "Se entiende por ensamble a la agrupación de instrumentos de distinto timbre; conga, djembe, batería de surdo, dum, campana, chico, etc. En este curso se trabaja la práctica y el aprendizaje de repertorio con los instrumentos antes mencionados, teniendo por finalidad la realización de presentaciones en vivo."
+      },
+      "handTechnique": {
+        "title": "Técnica de manos",
+        "subtitle": "El ritmo en tu cuerpo",
+        "description": "En este curso se trabajan los diferentes sonidos de los instrumentos conga y djembe, haciendo foco en las distintas posiciones de manos, para un audio logrado de slap, tono, bajo, palma y punta. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+      },
+      "stickTechnique": {
+        "title": "Técnica de palos",
+        "subtitle": "control y dinamismo",
+        "description": "En este curso se trabajan los diferentes sonidos de los instrumentos conga y djembe, haciendo foco en las distintas posiciones de manos, para un audio logrado de slap, tono, bajo, palma y punta. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+      },
+      "musicalLanguage": {
+        "title": "Lenguaje Musical",
+        "subtitle": "entende la música",
+        "description": "En este curso se trabajará la notación musical y sus valores, es decir, aprenderemos a leer y escribir música, haciendo hincapié en el ritmo."
+      },
+      "musicalDirection": {
+        "title": "Dirección musical",
+        "subtitle": "la expresión en tus manos",
+        "description": "Este curso tiene el objetivo de formar directores musicales. Se brindarán las herramientas necesarias para el desarrollo del lenguaje de señas musical. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+      },
+      "ensembleComposition": {
+        "title": "Composición de ensambles",
+        "subtitle": "crea tus ritmos",
+        "description": "Este curso comprende la invención de voces (patrones rítmicos), para generar ritmo y formas musicales. Procura la creación de plumas o ritmos. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+      }
+    },
+    "home": {
+      "title": "La escuela especializada en percusión más grande de Rosario desde 2018",
+      "subtitle": "Nuestra misión es inspirar y educar a los alumnos mediante el uso de la última tecnología y recursos para brindar una educación de percusión contemporánea distintiva."
+    },
+    "pageNotFound": {
+      "title": "página no encontrada",
+      "subtitleFirst": "La página que buscas no existe. Puede que lo hayan movido,",
+      "subtitleSecond": "o eliminado por completo. Puedes regresar a la página de inicio y ver si encuentras lo que buscas.",
+      "backToHome": "página de inicio"
+    }
+  },
+  "components": {
+    "whatsAppButton": {
+      "text": "Chat en whatsapp"
+    },
+    "founderBanner": {
+      "role": "Fundador y Director General",
+      "follow": "Sigue a",
+      "followAt": "en",
+      "descriptionFirst": "En la ciudad de Rosario - Argetina, una de las mayores cunas de músicos del continente, Carlos Rodrigo “Rolo” Verón fue reconocido en la como “artista distinguido” en la ciudad de Rosario - Argetpor su vasta trayectoria y a su permanente aporte a la cultura local y nacional. Con un talento sobresaliente en la percusión, integró grupos que lo llevaron a componer y colaborar en gran cantidad de géneros, que van desde los ritmos tropicales, folklore y rock and roll. Con su arte no sólo recorrió el país, sino que su talento lo llevó a Estados Unidos, América Latina y Europa.",
+      "descriptionSecond": "En el año 2016 fundó el proyecto «Tierra y Aire percusión», un espacio de aprendizaje musical que enseña a niños, jóvenes y adultos, incluyendo a personas con discapacidad a tocar varios instrumentos de distintas regiones tales como: congas, djembe, dun dun, zurdos, claves, campanas, entre otros. En nuestra ciudad formó parte de distintos eventos, tales como TedX, Rosario bajo las estrellas, Carnaval en el Anfiteatro Humberto de Nito, Inauguración del Mercado del Patio, entre otros grandes eventos. Cabe destacar que en el año 2020/21 compone su primer disco solista al cual titula 'Fluir', siendo grabado y masterizado en estudios Penny Lane de la ciudad de Rosario. El proyecto, presentado por Fernanda Gigliani, Iniciativa Popular, fue aprobado por unanimidad por el resto de concejales y concejalas del cuerpo legislativo. La Presidenta del Concejo Municipal, María Eugenia Schmuck se dirigió al recinto: “Es un placer que el recinto se llene de arte, estamos muy orgullosos de esta distinción ya que tenemos una ciudad que es semillero de grandes músicos, artistas y educadores. No cualquier persona por más buena que sea en su disciplina puede enseñar, sólo pueden hacerlo quienes pueden transformar el conocimiento en empatía, generando un espacio de construcción donde todos crecen, por eso es admirable y ejemplar la hazaña que estamos distinguiendo hoy”."
+    },
+    "homeBanner": {
+      "titleFirst": "Nuestra pasión es",
+      "titleSecond": "la percusión",
+      "subtitleFirst": "Somos una comunidad de educadores y alumnos",
+      "subtitleSecond": "Nos une la música y sus ritmos, la cual compartimos",
+      "subtitleThird": "a través de conciertos frecuentes"
+    },
+    "concertsList": {
+      "ticketsLink": "entradas",
+      "venueLink": "local"
+    },
+    "courses": {
+      "titleAndDescription": {
+        "ensemble": {
+          "title": "Práctica de ensamble",
+          "description": "Se entiende por ensamble a la agrupación de instrumentos de distinto timbre; conga, djembe, batería de surdo, dum, campana, chico, etc. En este curso se trabaja la práctica y el aprendizaje de repertorio con los instrumentos antes mencionados, teniendo por finalidad la realización de presentaciones en vivo."
+        },
+        "handTechnique": {
+          "title": "Técnica de manos",
+          "description": "En este curso se trabajan los diferentes sonidos de los instrumentos conga y djembe, haciendo foco en las distintas posiciones de manos, para un audio logrado de slap, tono, bajo, palma y punta. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+        },
+        "stickTechnique": {
+          "title": "Técnica de palos",
+          "description": "En este curso se trabajan los diferentes sonidos de los instrumentos conga y djembe, haciendo foco en las distintas posiciones de manos, para un audio logrado de slap, tono, bajo, palma y punta. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+        },
+        "musicalLanguage": {
+          "title": "Lenguaje Musical",
+          "description": "En este curso se trabajará la notación musical y sus valores, es decir, aprenderemos a leer y escribir música, haciendo hincapié en el ritmo."
+        },
+        "musicalDirection": {
+          "title": "Dirección musical",
+          "description": "Este curso tiene el objetivo de formar directores musicales. Se brindarán las herramientas necesarias para el desarrollo del lenguaje de señas musical. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+        },
+        "ensembleComposition": {
+          "title": "Composición de ensambles",
+          "description": "Este curso comprende la invención de voces (patrones rítmicos), para generar ritmo y formas musicales. Procura la creación de plumas o ritmos. (A este curso sólo se pueden inscribir quienes estén realizando el curso 'Práctica de ensamble')."
+        }
+      }
+    },
+    "courseCard": {
+      "seeMore": "ver más"
+    },
+    "courseCards": {
+      "cards": {
+        "ensemble": {
+          "title": "Práctica de ensamble",
+          "description": "compartir la música"
+        },
+        "handTechnique": {
+          "title": "Técnica de manos",
+          "description": "El ritmo en tu cuerpo"
+        },
+        "stickTechnique": {
+          "title": "Técnica de palos",
+          "description": "control y dinamismo"
+        },
+        "musicalLanguage": {
+          "title": "Lenguaje Musical",
+          "description": "entende la música"
+        },
+        "musicalDirection": {
+          "title": "Dirección musical",
+          "description": "la expresión en tus manos"
+        },
+        "ensembleComposition": {
+          "title": "Composición de ensambles",
+          "description": "crea tus ritmos"
+        }
+      }
+    },
+
+    "navbar": {
+      "links": {
+        "about": "proyecto",
+        "courses": "nuestros cursos"
+      },
+      "buttons": {
+        "contact": "contactanos"
+      }
+    },
+    "navigationMenu": {
+      "ensemble": "Práctica de ensamble",
+      "handTechnique": "Técnica de manos",
+      "stickTechnique": "Técnica de palos",
+      "musicalLanguage": "Lenguaje Musical",
+      "musicalDirection": "Dirección musical",
+      "ensembleComposition": "Composición de ensambles",
+      "school": "nuestra escuela",
+      "philosophy": "nuestra filosofía",
+      "founder": "nuestro fundador"
+    },
+    "footer": {
+      "teaserText": "Fundada desde 2018, Tierra Y Aire es la elección popular para la educación en percusión en Rosario.",
+      "linksColumn": {
+        "title": "enlaces",
+        "about": "sobre nosotros"
+      },
+      "coursesColumn": {
+        "title": "cursos",
+        "ensemble": "Práctica de ensamble",
+        "handTechnique": "Técnica de manos",
+        "stickTechnique": "Técnica de palos",
+        "musicalLanguage": "Lenguaje Musical",
+        "musicalDirection": "Dirección musical",
+        "ensembleComposition": "Composición de ensambles"
+      },
+      "socialMediaLinksColumn": {
+        "title": "Enlaces de redes sociales"
+      },
+      "copyright": "Tierra y Aire Percusión es una marca registrada en Argentina. © 2023 Tierra y Aire Percusión - Argentina. Todos los derechos reservados."
+    },
+
+    "testimonialCarousel": {
+      "title": "testimonios",
+      "mikeTiseyra": "Tierra y Aire es para mí, un espacio de Aprendizaje, de Disfrute, de Contención, y de Amistad, dónde cada uno de nosotros, (adultos y niños), de la mano de nuestro profesor y director Rolo Verón, nos hace plasmar, en las clases, ensayos, y  presentaciones en público, los conocimientos adquiridos, desde un lado desafiante y placentero. En los 8 años que hace que pertenezco a Tierra y Aire puedo decir que ES UN SENTIMIENTO",
+      "silvinaRaquel": "Yo me siento  contenida ,agradecida y feliz por estar dentro de un grupo en donde la música ,la amistad y la risa se mezclan y se  complementan unas con otras.Para mí es una experiencia nueva y también un ambiente nuevo, del cual no sabia nada pero lo que haces vos con esto es grandioso y siento que lo puedo hacer ...Más lento o más rápido .... Pero... Hace que me mantenga firme para apreender y seguir adelante asi que....Gracias por tu aporte y soporte....Sin vos seria mucho mas  dificil capo.Bancanos siempre con esa dedicacion y locura por lo que haces....Se transmite y no sabes como !!! Te y los quiero",
+      "luisa": "Tierra y aire fue un gran descubrimiento para mi, me sentí feliz desde la primera clase, encontré una nueva pasión y un grupo humano incomparable. Rolo es lo más! Tiene una pasión y una paciencia infinita, las clases son muy ágiles y nunca salgo sin aprender algo nuevo, trabajamos seriamente pero de una manera muy divertida. Nunca pensé que sería posible tocar un instrumento desde el primer día!",
+      "mumi": "Tierra y aire empezó como una aventura, una actividad para despertar la adrenalina, porque nunca incursioné en la música... Se abrió en mí un abanico de sensaciones que superó mis expectativas: coordinación, atención, disfrute,... Un grupo de coordialidad, amistad y compañerismo. La contención, paciencia y amor brindada por el director rolo es incomparable... Mirar la vida desde otra perspectiva saludable al alma.",
+      "marito": "Tierra y aire es mí espacio de concentración, relajación y concentración músical. Lo más lindo son los grupos las buenas energías de la gente y del profe Rolo. Puedo compartir este espacio en shows con mí familia. Eso es impagable, que te vallan a ver arriba de escenario y verlos desde el mismo quedas muy de cara",
+      "carlitos": "Tierra y Aire es un espacio que me hizo reencontrar con las buenas vibras!!! Donde detrás de cada sonido se siente el regocijo del alma... Gracias al profe Rolo las cosas parecen más simples de lo que son.",
+      "cheliCastellano": "No sabía que lo estaba buscando pero un día encontré un espacio lleno de la magia de los tambores y me enamoré del Djembe. No se que fue lo que me trajo hasta aquí, solo sé que la fuerza de los sonidos me llegan al alma y lo disfruto tanto...... Gracias Rolo por enseñarnos con paciencia y pasión. Gracias Tierra y Aire por darnos este espacio de disfrute compartido",
+      "silvinaPesaresi": "Hola, les cuento que arrancamos este desafío para que Juan Jose pudiera sentir la música de una manera diferente y nos encontramos con un equipo de profesionales y humanos que hacen que cada clase sea diferente y salgas con una sonrisa a pleno,   luego me sume yo y  después Luzmi que llevan un ritmo innato de su abuelo Pocho, la música sana y Rolo te hace vivir lo a pleno.",
+      "flavia": "Tierra y Aire es un espacio donde increíblemente confluye la creación, las risas y el aprendizaje (entre otras cosas). Me encanta poder participar de las clases y a la vez compartir buenos momentos con gente súper buena onda . El  profe  hace magia con su talento y nos transmite seguridad haciendo que lo difícil sea posible de hacer . Un capo!!!",
+      "alicia": "Fui pocas clases .. pero como las disfrute! Y disfrute de un profe como rolo y de un grupo lindosimo de gente! Me quedé con ganas de más!! Volveré este febrero!",
+      "lilianaMartinez": "Mi experiencia en Tierra y Aire, es altamente satisfactoria, lindo grupo, muy buenos profesores, se aprende en un ambiente de alegria y buena onda, los errores se marcan como una critica constructiva para seguir avanzando. Si mis posibilidades económicas me lo permiten, seguire este año con el aprendizaje."
+    }
+  }
+}

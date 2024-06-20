@@ -1,0 +1,200 @@
+{
+  "pages": {
+    "about": {
+      "aboutPageUpperSectionTitle": "About Tierra y Aire",
+      "aboutPageUpperSectionText": "Established since 2018, the Tierra y Aire ethos has always been one of integration and sharing. Today, we have become the people’s choice for drum education as the largest specialized drum school in Rosario.",
+      "firstImageCard": "We seek to inspire and educate drummers by using their own musicallity and from there to offer resources of contemporary drum education.",
+      "ourPhilosophyTitle": "Our Philosophy",
+      "ourPhilosophySubtitle": "Skill should not be harnessed by hard work alone",
+      "ourPhilosophyFirst": "At Tierra y Aire, we believe that passion is the fundamental building block to every student’s success. Through passion comes curiosity, and it is this very curiosity that would spur the student to continuously work, and learn, more on his or her craft.",
+      "inspirationAndPhilosophySecond": "It is our responsibility, as educators, to fuel that curiosity in every student; constantly nurturing, guiding and motivating every student to eventually reach their individual and collective music objectives.",
+      "inspirationAndEducation": {
+        "title": "Inspiration & education",
+        "firstParagraph": "At Tierra y Aire, we believe that the heartbeat of percusion begins with inspiration. Our programmes are created with creativity, innovation, improvisation and practice drumming. We ensure the right balance for your specific needs at every musical level.",
+        "secondParagraph": "Our method has been thoughtfully designed with your objectives in mind — we place a priority on the musicality of the students by playing percussion from the very first day and  performing live in short term."
+      }
+    },
+    "concerts": {
+      "title": "Concerts"
+    },
+    "courses": {
+      "ensemble": {
+        "title": "Ensemble practice",
+        "subtitle": "share the music",
+        "description": "Ensemble is understood as the grouping of instruments of different timbre; conga, djembe, surdo drums, dum, bell, boy, etc. In this course, we work on practicing and learning repertoire with the aforementioned instruments, with the purpose of performing live performances."
+      },
+      "handTechnique": {
+        "title": "Hand technique",
+        "subtitle": "The rhythm in your body",
+        "description": "In this course the different sounds of the conga and djembe instruments are worked on, focusing on the different hand positions, for an accomplished audio of slap, tone, bottom, palm and tip. (Only those who are taking the course can register for this course. course 'Assembly practice')."
+      },
+      "stickTechnique": {
+        "title": "Stick technique",
+        "subtitle": "control and dynamism",
+        "description": "This course aims to offer tools to save energy and to develop precision and control of instruments struck with sticks when playing: Uruguayan chico, surdo, snare drum, cymbal, dum drums, etc. (Only those who are taking the 'Assembly Practice' course can register for this course)."
+      },
+      "musicalLanguage": {
+        "title": "Musical language",
+        "subtitle": "understand music",
+        "description": "In this course we will work on musical notation and its values, that is, we will learn to read and write music, emphasizing rhythm."
+      },
+      "musicalDirection": {
+        "title": "Musical direction",
+        "subtitle": "The expression in your hands",
+        "description": "This course has the objective of training musical directors. The necessary tools for the development of musical sign language will be provided. (Only those who are taking the 'Ensemble Practice' course can register for this course)."
+      },
+      "ensembleComposition": {
+        "title": "Ensemble composition",
+        "subtitle": "create your rhythms",
+        "description": "This course includes the invention of voices (rhythmic patterns), to generate rhythm and musical forms. Try to create feathers or rhythms. (You can only attend this course register those who are doing the 'Assembly Practice' course)."
+      }
+    },
+    "home": {
+      "title": "Rosario's largest specialized drum school since 2018",
+      "subtitle": "Our mission is to inspire and educate drummers by using the latest technology and resources in providing a distinctive contemporary drum education."
+    },
+    "pageNotFound": {
+      "title": "page not found",
+      "subtitleFirst": "The page you are looking for does not exist. It may have been moved,",
+      "subtitleSecond": "or removed altogether. Perhaps you can return back to the site's homepage and see if you can find what you are looking for.",
+      "backToHome": "back to home"
+    }
+  },
+  "components": {
+    "whatsAppButton": {
+      "text": "Chat On WhatsApp"
+    },
+    "founderBanner": {
+      "role": "Founder and Managing Director",
+      "follow": "Follow",
+      "followAt": "at",
+      "descriptionFirst": "In the city of Rosario - Argetina, one of the largest cradles of musicians on the continent, Carlos Rodrigo “Rolo” Verón was recognized as a “distinguished artist” in the city of Rosario - Arget for his vast career and his permanent contribution to culture local and national. With an outstanding talent in percussion, he joined groups that led him to compose and collaborate in a large number of genres, ranging from tropical rhythms, folklore and rock and roll. With his art he not only toured the country, but his talent took him to the United States, Latin America and Europe.",
+      "descriptionSecond": "In 2016 he founded the “Tierra y Aire percussion” project, a musical learning space that teaches children, young people and adults, including people with disabilities, to play various instruments from different regions such as: congas, djembe, dun dun, left-handed, keys, bells, among others. In our city he was part of different events, such as TedX, Rosario under the stars, Carnival at the Humberto de Nito Amphitheater, Inauguration of the Patio Market, among other great events. It should be noted that in 2020/21 he composed his first solo album, which he titled 'Fluir', being recorded and mastered at Penny Lane studios in the city of Rosario. The project, presented by Fernanda Gigliani, Popular Initiative, was unanimously approved by the rest of the councilors of the legislative body. The President of the Municipal Council, María Eugenia Schmuck, addressed the venue: “It is a pleasure that the venue is filled with art, we are very proud of this distinction since we have a city that is a breeding ground for great musicians, artists and educators. Not just anyone, no matter how good they are in their discipline, can teach, only those who can transform knowledge into empathy can do so, generating a construction space where everyone grows, which is why the feat that we are distinguishing today is admirable and exemplary."
+    },
+    "homeBanner": {
+      "titleFirst": "Our passion is",
+      "titleSecond": "the percussion",
+      "subtitleFirst": "We are a community of educators and students",
+      "subtitleSecond": "Music and it's rhythm bring us together being",
+      "subtitleThird": "a bond we celebrate with regular concerts"
+    },
+    "concertsList": {
+      "ticketsLink": "tickets",
+      "venueLink": "venue"
+    },
+    "courses": {
+      "titleAndDescription": {
+        "ensemble": {
+          "title": "Ensemble practice",
+          "description": "Ensemble is understood as the grouping of instruments of different timbre; conga, djembe, surdo drums, dum, bell, boy, etc. In this course, we work on practicing and learning repertoire with the aforementioned instruments, with the purpose of performing live performances."
+        },
+        "handTechnique": {
+          "title": "Hand technique",
+          "description": "In this course the different sounds of the conga and djembe instruments are worked on, focusing on the different hand positions, for an accomplished audio of slap, tone, bottom, palm and tip. (Only those who are taking the course can register for this course. course 'Assembly practice')."
+        },
+        "stickTechnique": {
+          "title": "Stick technique",
+          "description": "This course aims to offer tools to save energy and to develop precision and control of instruments struck with sticks when playing: Uruguayan chico, surdo, snare drum, cymbal, dum drums, etc. (Only those who are taking the 'Assembly Practice' course can register for this course)."
+        },
+        "musicalLanguage": {
+          "title": "Musical language",
+          "description": "In this course we will work on musical notation and its values, that is, we will learn to read and write music, emphasizing rhythm."
+        },
+        "musicalDirection": {
+          "title": "Musical direction",
+          "description": "This course has the objective of training musical directors. The necessary tools for the development of musical sign language will be provided. (Only those who are taking the 'Ensemble Practice' course can register for this course)."
+        },
+        "ensembleComposition": {
+          "title": "Ensemble composition",
+          "description": "This course includes the invention of voices (rhythmic patterns), to generate rhythm and musical forms. Try to create feathers or rhythms. (You can only attend this course register those who are doing the 'Assembly Practice' course)."
+        }
+      }
+    },
+    "courseCard": {
+      "seeMore": "see more"
+    },
+    "courseCards": {
+      "cards": {
+        "ensemble": {
+          "title": "Ensemble practice",
+          "description": "share the music"
+        },
+        "handTechnique": {
+          "title": "Hand technique",
+          "description": "The rhythm in your body"
+        },
+        "stickTechnique": {
+          "title": "Stick technique",
+          "description": "control and dynamism"
+        },
+        "musicalLanguage": {
+          "title": "Musical language",
+          "description": "understand music"
+        },
+        "musicalDirection": {
+          "title": "Musical direction",
+          "description": "The expression in your hands"
+        },
+        "ensembleComposition": {
+          "title": "Ensemble composition",
+          "description": "create your rhythms"
+        }
+      }
+    },
+
+    "navbar": {
+      "links": {
+        "about": "about us",
+        "courses": "our courses"
+      },
+      "buttons": {
+        "contact": "contact us"
+      }
+    },
+    "navigationMenu": {
+      "ensemble": "Ensemble practice",
+      "handTechnique": "Hand technique",
+      "stickTechnique": "Stick technique",
+      "musicalLanguage": "Musical language",
+      "musicalDirection": "Musical direction",
+      "ensembleComposition": "Ensemble composition",
+      "school": "our school",
+      "philosophy": "our philosophy",
+      "founder": "our founder"
+    },
+    "footer": {
+      "teaserText": "Established since 2018, Tierra Y Aire is the people’s choice for drum education in Rosario.",
+      "linksColumn": {
+        "title": "links",
+        "about": "about us"
+      },
+      "coursesColumn": {
+        "title": "courses",
+        "ensemble": "Ensemble practice",
+        "handTechnique": "Hand technique",
+        "stickTechnique": "Stick technique",
+        "musicalLanguage": "Musical language",
+        "musicalDirection": "Musical direction",
+        "ensembleComposition": "Ensemble composition"
+      },
+      "socialMediaLinksColumn": {
+        "title": "social links"
+      },
+      "copyright": "Tierra y Aire Percusion is a registered trademark in Argentina. © 2023 Tierra y Aire Percusion - Argentina. All Rights Reserved."
+    },
+    "testimonialCarousel": {
+      "title": "testimonials",
+      "mikeTiseyra": "Tierra y Aire is for me a space of Learning, Enjoyment, Containment and Friendship, where each of us, (adults and children), with the help of our teacher and director Rolo Verón, makes us express, in classes, essays , and public presentations, the knowledge acquired, from a challenging and enjoyable side. In the 8 years that I have been a member of Tierra y Aire I can say that IT IS A FEELING",
+      "silvinaRaquel": "I feel contained, grateful and happy to be in a group where music, friendship and laughter mix and complement each other. For me it is a new experience and also a new environment, about which i knew nothing but what you do with this is great and i feel like i can do it...Slower or faster.... But... It makes me stay firm to learn and move forward so....Thank you for your contribution and support...Without you it would be much more difficult capo.Bancanos always with that dedication and crazy for what you do...It is transmitted and you don't know how!!! Love you all",
+      "luisa": "Tierra y aire was a great discovery for me, I felt happy from the first class, I found a new passion and an incomparable human group. Rolo is the best! He has infinite passion and patience, the classes are very agile and I never leave without learning something new, we work seriously but in a very fun way. I never thought it would be possible to play an instrument from day one!",
+      "mumi": "Tierra y aire began as an adventure, an activity to awaken adrenaline, because I never dabbled in music... A range of sensations opened up in me that exceeded my expectations: coordination, attention, enjoyment,... A group of coordination , friendship and companionship. The support, patience and love provided by director Rolo is incomparable... Looking at life from another perspective that is healthy for the soul.",
+      "marito": "Tierra y aire is my space for concentration, relaxation and musical concentration. The most beautiful thing is the groups, the good energy of the people and teacher Rolo. I can share this space in shows with my family. That is priceless, for them to see you up on stage and to see them from there, you are very excited.",
+      "carlitos": "Tierra y Aire is a space that made me rediscover good vibes!!! Where behind each sound you feel the joy of the soul... Thanks to teacher Rolo, things seem simpler than they are",
+      "cheliCastellano": "I didn't know I was looking for it but one day I found a space full of the magic of drums and I fell in love with the Djembe. I don't know what brought me here, I just know that the power of the sounds reaches my soul and I enjoy it so much...... Thank you Rolo for teaching us with patience and passion. Thank you Tierra y Aire for giving us this space for shared enjoyment.",
+      "silvinaPesaresi": "I tell you that we started this challenge so that Juan Jose could feel the music in a different way and we met a team of professionals and humans who make each class different and you leave with a full smile, then I join in and then Luzmi They carry an innate rhythm from their grandfather Pocho, the music heals and Rolo makes you live it to the fullest.",
+      "flavia": "Tierra y Aire is a space where creation, laughter and learning (among other things) incredibly come together. I love being able to participate in classes and at the same time share good times with super cool people. The teacher works magic with his talent and gives us confidence by making what is difficult possible to do. A boss!!!",
+      "alicia": "I went to a few classes... but I enjoyed them! And enjoy a teacher like Rolo and a beautiful group of people! I was wanting more!! I will be back this February!",
+      "lilianaMartinez": "My experience in Tierra y Aire is highly satisfactory, great group, amazing teachers, you learn in an environment of joy and good vibes, mistakes are marked as constructive criticism to continue moving forward. If my financial possibilities allow it, I will continue with the learning this year."
+    }
+  }
+}
