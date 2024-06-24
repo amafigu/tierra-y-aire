@@ -1,12 +1,12 @@
+import { Button } from '@/components/ui/Button'
+import { Flex } from '@/components/ui/Flex'
+import { Typography } from '@/components/ui/Typography'
 import { navigationMenuItems } from '@/constants/navigationMenuItems'
 import { useMenuContext } from '@/context/menuContext'
 import { useOnNavigate } from '@/hooks/useOnNavigate'
 import { useTranslate } from '@/hooks/useTranslate'
 import { FC } from 'react'
 import styled from 'styled-components'
-import { Button } from '../ui/Button'
-import { Flex } from '../ui/Flex'
-import { Typography } from '../ui/Typography'
 
 const List = styled(Flex)`
   width: 100%;
@@ -20,8 +20,8 @@ const List = styled(Flex)`
 
 const ListItem = styled(Button)`
   display: flex;
+  justify-content: flex-start;
   flex-grow: 1;
-  justifycontent: flex-start;
   padding: ${(props) => props.theme.spacing.small} 0;
   margin: 0 ${(props) => props.theme.spacing.small};
   overflow: hidden;
