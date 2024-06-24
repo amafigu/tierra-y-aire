@@ -110,10 +110,9 @@
         }
       }
     },
-    "courseCard": {
-      "seeMore": "see more"
-    },
+
     "courseCards": {
+      "seeMore": "see more",
       "cards": {
         "ensemble": {
           "title": "Ensemble practice",

@@ -110,10 +110,9 @@
         }
       }
     },
-    "courseCard": {
-      "seeMore": "ver más"
-    },
+
     "courseCards": {
+      "seeMore": "ver más",
       "cards": {
         "ensemble": {
           "title": "Práctica de ensamble",
