@@ -1,14 +1,14 @@
+import { Box } from '@/components/ui/Box'
+import { Button } from '@/components/ui/Button'
+import { Flex } from '@/components/ui/Flex'
+import { Image } from '@/components/ui/Image'
+import { Typography } from '@/components/ui/Typography'
 import { useTranslate } from '@/hooks/useTranslate'
 import { CourseCard as ICourseCard } from '@/types/Cards'
 import { camelCaseToTitleCase } from '@/utils/utils'
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Box } from './Box'
-import { Button } from './Button'
-import { Flex } from './Flex'
-import { Image } from './Image'
-import { Typography } from './Typography'
 
 const Card = styled(Flex)`
   width: ${(props) => props.theme.dimensions.widthCard};
