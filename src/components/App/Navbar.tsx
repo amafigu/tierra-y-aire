@@ -1,9 +1,9 @@
+import { ChevronSwitcher } from '@/components/App/ChevronSwitcher'
+import { CoursesList } from '@/components/App/CoursesList'
 import { EmailButton } from '@/components/App/EmailButton'
 import { LanguagesSelector } from '@/components/App/LanguagesSelector'
 import { MobileMenu } from '@/components/App/MobileMenu'
 import { Button } from '@/components/ui/Button'
-import { ChevronToggler } from '@/components/ui/ChevronToggler'
-import { CoursesList } from '@/components/ui/CoursesList'
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
@@ -14,7 +14,7 @@ import { useTranslate } from '@/hooks/useTranslate'
 import { laptop, tablet } from '@/styles/breakpoints'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const MobileMenuContainer = styled(Flex)`
@@ -24,13 +24,8 @@ const MobileMenuContainer = styled(Flex)`
 `
 
 const Nav = styled(Flex)`
-  background-color: ${(props) => props.theme.color.backgroundPrimary};
-`
-
-const Option = styled(Flex)`
   position: relative;
-  min-width: fit-content;
-  cursor: pointer;
+  background-color: ${(props) => props.theme.color.backgroundPrimary};
 `
 
 const NavItem = styled(Button)`
@@ -40,6 +35,11 @@ const NavItem = styled(Button)`
   border: none;
   font: inherit;
 `
+const Option = styled(Flex)`
+  position: relative;
+  min-width: fit-content;
+  cursor: pointer;
+`
 
 const MobileMenuButton = styled(NavItem)`
   padding: 0;
@@ -48,10 +48,14 @@ const MobileMenuButton = styled(NavItem)`
     display: none;
   `};
 `
+const LogoContainer = styled(Flex)`
+  ${laptop`
+   width: fit-content;
+`}
+`
 
 const LinksContainer = styled(Flex)`
   display: none;
-  margin-right: 3rem;
   ${laptop`
     display: flex;
   `}
@@ -67,8 +71,14 @@ const Logo = styled(Image)`
     `}
 `
 
+const Link = styled(Button)`
+  padding: 0;
+  margin-right: ${(props) => props.theme.spacing.regular};
+`
+
 const ListContainer = styled(Flex)`
   position: absolute;
+  top: 48px;
   margin-top: ${(props) => props.theme.spacing.regular};
   border-radius: ${(props) => props.theme.borderRadius.regular};
 `
@@ -82,17 +92,26 @@ export const Navbar = () => {
 
   return (
     <>
-      <Flex $alignItems='center' $justifyContent='center'>
-        <Nav
-          as='nav'
+      <Nav as='nav' $alignItems='center' $justifyContent='center' $width='100%'>
+        <Flex
           $height='100px'
           $justifyContent='space-between'
           $alignItems='center'
           $width='100%'
+          $margin='0 1.5rem'
         >
-          <Flex $alignItems='center'>
+          <LogoContainer
+            $alignItems='center'
+            $justifyContent='space-between'
+            $width='100%'
+          >
             <Flex $alignItems='center'>
-              <Button $size='medium' $variant='link' as={Link} to={ROUTES.HOME}>
+              <Link
+                $size='medium'
+                $variant='link'
+                as={RouterLink}
+                to={ROUTES.HOME}
+              >
                 <Logo
                   $width='64px'
                   $height='64px'
@@ -100,7 +119,7 @@ export const Navbar = () => {
                   src={`/images/${logo}`}
                   alt='logo'
                 />
-              </Button>
+              </Link>
               <Flex $direction='column' $justifyContent='center'>
                 <Typography $weight='bold' $size='medium' $isUpperCase={true}>
                   tierra
@@ -119,10 +138,14 @@ export const Navbar = () => {
                 <FontAwesomeIcon icon={faBars} size='2xl' />
               </MobileMenuButton>
             </Flex>
-          </Flex>
-
+          </LogoContainer>
           <LinksContainer $alignItems='center' $gap='1.75rem'>
-            <NavItem $variant='link' $size='medium' as={Link} to={ROUTES.ABOUT}>
+            <NavItem
+              $variant='link'
+              $size='medium'
+              as={RouterLink}
+              to={ROUTES.ABOUT}
+            >
               <Typography $isUpperCase={true} $size='small' $weight='semibold'>
                 {text.links.about}
               </Typography>
@@ -143,7 +166,7 @@ export const Navbar = () => {
                   {text.links.courses}
                 </Typography>
               </NavItem>
-              <ChevronToggler show={showCourses} setShow={setShowCourses} />
+              <ChevronSwitcher show={showCourses} setShow={setShowCourses} />
               {showCourses && (
                 <ListContainer $direction='column'>
                   <CoursesList />
@@ -155,12 +178,12 @@ export const Navbar = () => {
             </Option>
             <EmailButton />
           </LinksContainer>
-        </Nav>
+        </Flex>
 
         <MobileMenuContainer>
           {showMobile && <MobileMenu />}
         </MobileMenuContainer>
-      </Flex>
+      </Nav>
     </>
   )
 }
