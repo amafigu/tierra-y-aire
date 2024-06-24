@@ -10,6 +10,7 @@ type Props = {
   $border?: CSSProperties['border']
   $boxShadow?: CSSProperties['boxShadow']
   $objectFit?: CSSProperties['objectFit']
+  $objectPosition?: CSSProperties['objectPosition']
 }
 
 export const Image = styled.img<Props>`
@@ -22,4 +23,5 @@ export const Image = styled.img<Props>`
   border: ${(props) => props.$border};
   box-shadow: ${(props) => props.$boxShadow};
   object-fit: ${(props) => props.$objectFit};
+  object-position: ${(props) => props.$objectPosition};
 `
