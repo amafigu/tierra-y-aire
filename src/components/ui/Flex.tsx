@@ -2,12 +2,13 @@ import type { CSSProperties } from 'react'
 import { styled } from 'styled-components'
 
 type Props = {
-  $direction?: CSSProperties['flexDirection']
-  $alignItems?: CSSProperties['alignItems']
-  $justifyContent?: CSSProperties['justifyContent']
   $grow?: CSSProperties['flexGrow']
   $shrink?: CSSProperties['flexShrink']
   $basis?: CSSProperties['flexBasis']
+  $direction?: CSSProperties['flexDirection']
+  $wrap?: CSSProperties['flexWrap']
+  $alignItems?: CSSProperties['alignItems']
+  $justifyContent?: CSSProperties['justifyContent']
   $gap?: CSSProperties['gap']
   $margin?: CSSProperties['margin']
   $padding?: CSSProperties['padding']
@@ -16,11 +17,12 @@ type Props = {
 }
 
 export const Flex = styled.div<Props>`
+  display: flex;
   flex-grow: ${(props) => props.$grow};
   flex-shrink: ${(props) => props.$shrink};
   flex-basis: ${(props) => props.$basis};
-  display: flex;
   flex-direction: ${(props) => props.$direction};
+  flex-wrap: ${(props) => props.$wrap};
   align-items: ${(props) => props.$alignItems};
   justify-content: ${(props) => props.$justifyContent};
   gap: ${(props) => props.$gap};
