@@ -1,8 +1,8 @@
 export const theme = {
   color: {
-    strockeSecondary: '#30343f', //borderDark
-    strockePrimary: '#3b3e4b', // borderDarker
-    strockeTertiary: '#8e8d8d', // borderLight
+    strockeSecondary: '#30343f',
+    strockePrimary: '#3b3e4b',
+    strockeTertiary: '#8e8d8d',
     backgroundPrimary: '#202027',
     backgroundSecondary: '#12141d',
     backgroundTertiary: '#20232d',
