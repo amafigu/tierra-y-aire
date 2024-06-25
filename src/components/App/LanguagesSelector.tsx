@@ -55,15 +55,13 @@ export const LanguagesSelector: FC = () => {
   return (
     <List aria-label='Languages selector'>
       {langOptions.map((option) => (
-        <>
-          <ListItem
-            key={option}
-            className={`listItem ${language === option ? 'active' : ''}`}
-            onClick={() => changeLanguage(option)}
-          >
-            <Typography className='language'>{option.toUpperCase()}</Typography>
-          </ListItem>
-        </>
+        <ListItem
+          key={option}
+          className={`listItem ${language === option ? 'active' : ''}`}
+          onClick={() => changeLanguage(option)}
+        >
+          <Typography className='language'>{option.toUpperCase()}</Typography>
+        </ListItem>
       ))}
     </List>
   )
