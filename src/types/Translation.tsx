@@ -49,7 +49,8 @@ export interface ComponentsTranslations {
     socialMediaLinksColumn: {
       title: string
     }
-    copyright: string
+    copyrightFirst: string
+    copyrightSecond: string
   }
   whatsAppButton: {
     [key: string]: string
