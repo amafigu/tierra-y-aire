@@ -1,90 +1,105 @@
-import { Box } from '@/components/ui/Box'
 import { Flex } from '@/components/ui/Flex'
-import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
-import { logo } from '@/constants/images'
+import { educationBanner } from '@/constants/backgroundImages'
 import { useTranslate } from '@/hooks/useTranslate'
-import { desktop, laptop, tablet } from '@/styles/breakpoints'
+import { desktop } from '@/styles/breakpoints'
 import { forwardRef } from 'react'
 import styled from 'styled-components'
 
 const Section = styled(Flex)`
-  background-color: ${(props) => props.theme.color.backgroundSecondary};
   margin: 0;
+  background-color: ${(props) => props.theme.color.backgroundSecondary};
 
-  ${laptop`    
-      margin: 0 60px 120px 60px;
-  `}
+  ${desktop`
+    margin: 60px; 
+`}
 `
 
-const Container = styled(Flex)`
+const Container = styled.div`
+  position: relative;
+  width: 80%;
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    width: ${(props) => props.theme.dimensions.widthMobilePage};
+    margin: ${(props) => props.theme.spacing.large};
+  }
+`
+
+const Image = styled.img`
   width: 100%;
-  margin-bottom: ${(props) => props.theme.spacing.regular};
-  gap: ${(props) => props.theme.spacing.regular};
+  object-fit: cover;
+  border-radius: ${(props) => props.theme.borderRadius.regular};
+  opacity: ${(props) => props.theme.opacity.primary};
 
-  ${laptop`
-    flex-direction: row;
-    gap: 0;
-    `}
-
-  ${desktop`
-    width: ${(props) => props.theme.dimensions.widthDesktopPage};
-    `}
+  @media (max-width: 576px) {
+    height: 300px;
+    object-position: left;
+  }
 `
 
-const Title = styled(Typography)`
-  margin-top: ${(props) => props.theme.spacing.semiRegular};
+const TextContainer = styled(Flex)`
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  height: auto;
+  max-width: 600px;
+  background: ${(props) => props.theme.color.backgroundTertiary};
+  border-radius: ${(props) => props.theme.borderRadius.regular};
 
-  ${tablet`
-    margin-top: 0;
-    `}
+  @media (max-width: 1440px) {
+    margin-top: 40px;
+    font-size: ${(props) => props.theme.font.size.small};
+  }
 
-  ${desktop`
-  font-size: ${(props) => props.theme.font.size.huge};
-  font-weight: ${(props) => props.theme.font.weight.extraBold};
-    `}
+  @media (max-width: 1024px) {
+    width: 76%;
+    margin-top: 20px;
+    font-size: ${(props) => props.theme.font.size.small};
+  }
+
+  @media (max-width: 576px) {
+    position: static;
+    right: unset;
+    bottom: unset;
+    width: 100%;
+    margin-top: 40px;
+  }
 `
 
-const TextContainer = styled(Box)`
-  padding: 0 ${(props) => props.theme.spacing.large};
+const Text = styled(Typography)`
+  width: 100%;
+  margin: ${(props) => props.theme.spacing.regular};
+  color: ${(props) => props.theme.color.secondary};
+  opacity: 0.9;
+  font-size: ${(props) => props.theme.font.size.semiMedium};
+  font-weight: ${(props) => props.theme.font.weight.normal};
 
-  ${laptop`    
-    width: 66%;
-    padding: 0;
-    margin-top: ${(props) => props.theme.spacing.large};
-    `}
-
+  @media (max-width: 576px) {
+    margin: ${(props) => props.theme.spacing.small};
+    font-size: ${(props) => props.theme.font.size.small};
   }
 `
 
 export const EducationSection = forwardRef<HTMLDivElement>((_, ref) => {
   const translate = useTranslate()
-  const text = translate.pages.about.inspirationAndEducation
+  const text = translate.pages.about
 
   return (
-    <Section as='section' ref={ref} $direction='column' $alignItems='center'>
-      <Container $alignItems='center' $direction='column'>
-        <Flex $width='90%' $direction='column'>
-          <Box>
-            <Image
-              $width='82px'
-              $height='82px'
-              $borderRadius='50%'
-              alt='logo'
-              src={`/images/${logo}`}
-            />
-          </Box>
-          <Title $size='large' $weight='extraBold'>
-            {text.title}
-          </Title>
-        </Flex>
-        <TextContainer $width='90%'>
-          <Box className='paragraphs'>
-            <Typography $size='semiMedium' $weight='normal'>
-              {text.firstParagraph}
-            </Typography>
-            <Typography $size='semiMedium'>{text.secondParagraph}</Typography>
-          </Box>
+    <Section ref={ref} as='section' $direction='column' $alignItems='center'>
+      <Container>
+        <Image src={`/images/${educationBanner}`} alt='inspiration section' />
+        <TextContainer
+          $width='100%'
+          $justifyContent='center'
+          $alignItems='center'
+        >
+          <Text $color='secondary' $size='small'>
+            {text.firstImageCard}
+          </Text>
         </TextContainer>
       </Container>
     </Section>
