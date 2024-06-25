@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-import type { ThemeType } from './theme'
 
-export const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
+export const GlobalStyle = createGlobalStyle`
   html {
     overflow-y: scroll;
   }
@@ -12,9 +11,9 @@ export const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   body {
-    font-family: ${(props) => props.theme.font.family.primary};
-    font-size: ${(props) => props.theme.font.size.medium};
-    color: ${(props) => props.theme.color.primary};
+    font-family: arial, sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
     padding: 0;
     margin: 0;
   }
