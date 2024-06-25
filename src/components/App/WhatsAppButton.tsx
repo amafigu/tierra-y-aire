@@ -14,17 +14,19 @@ const WhatsAppBtn = styled(Flex)`
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 100vw;
   transform: none;
   border-radius: 2px;
   background-color: ${(props) => props.theme.color.branding};
-  padding: ${(props) => props.theme.spacing.smallest}
-    ${(props) => props.theme.spacing.semiLarge};
-  color: ${(props) => props.theme.color.backgroundPrimary};
 
+  color: ${(props) => props.theme.color.backgroundPrimary};
   z-index: ${(props) => props.theme.zIndex.whatsappButton};
 
   ${laptop`
     position: fixed;
+    margin: 0;
+    padding: ${(props) => props.theme.spacing.smallest}
+    ${(props) => props.theme.spacing.semiLarge};
     top: 50%;
     right: -112px;
     width: 218px;
@@ -32,6 +34,11 @@ const WhatsAppBtn = styled(Flex)`
     transform: translateY(-50%) rotate(90deg);
     border-radius: ${(props) => props.theme.borderRadius.regular};
   `}
+`
+
+const Container = styled(Flex)`
+  ${laptop`margin: 0;
+    `}
 `
 
 export const WhatsAppButton: FC = () => {
@@ -48,10 +55,15 @@ export const WhatsAppButton: FC = () => {
         $alignItems='center'
         aria-label='send whatsapp'
       >
-        <Flex $alignItems='center'>
+        <Container
+          $alignItems='center'
+          $justifyContent='center'
+          $margin='0.5rem 1rem'
+          $width='100%'
+        >
           <FontAwesomeIcon icon={faWhatsapp} size='2x' />
           <Typography $margin='0 0 0 0.5rem'>{text.text}</Typography>
-        </Flex>
+        </Container>
       </WhatsAppBtn>
     )
   )
