@@ -15,3 +15,12 @@ export const colors = {
 }
 
 export type Color = keyof typeof colors
+
+export const opacities = {
+  primary: 0.8,
+  secondary: 0.9,
+  tertiary: 0.5,
+  light: 0.3,
+}
+
+export type Opacity = keyof typeof opacities
