@@ -82,6 +82,7 @@ const variantStyle = {
   `,
   link: css`
     color: ${(props) => props.theme.color.primary};
+    padding: 0;
 
     &:hover {
       color: ${(props) => props.theme.color.branding};
