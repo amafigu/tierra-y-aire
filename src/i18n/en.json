@@ -179,7 +179,8 @@
       "socialMediaLinksColumn": {
         "title": "social links"
       },
-      "copyright": "Tierra y Aire Percusion is a registered trademark in Argentina. © 2023 Tierra y Aire Percusion - Argentina. All Rights Reserved."
+      "copyrightFirst": "Tierra y Aire Percusion is a registered trademark in Argentina.",
+      "copyrightSecond": "© 2023 Tierra y Aire Percusion - Argentina. All Rights Reserved."
     },
     "testimonialCarousel": {
       "title": "testimonials",

@@ -179,7 +179,8 @@
       "socialMediaLinksColumn": {
         "title": "Enlaces de redes sociales"
       },
-      "copyright": "Tierra y Aire Percusión es una marca registrada en Argentina. © 2023 Tierra y Aire Percusión - Argentina. Todos los derechos reservados."
+      "copyrightFirst": "Tierra y Aire Percusión es una marca registrada en Argentina.",
+      "copyrightSecond": "© 2023 Tierra y Aire Percusión - Argentina. Todos los derechos reservados."
     },
 
     "testimonialCarousel": {
