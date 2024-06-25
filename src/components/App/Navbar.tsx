@@ -2,16 +2,15 @@ import { ChevronSwitcher } from '@/components/App/ChevronSwitcher'
 import { CoursesList } from '@/components/App/CoursesList'
 import { EmailButton } from '@/components/App/EmailButton'
 import { LanguagesSelector } from '@/components/App/LanguagesSelector'
+import { Logo } from '@/components/App/Logo'
 import { MobileMenu } from '@/components/App/MobileMenu'
 import { Button } from '@/components/ui/Button'
 import { Flex } from '@/components/ui/Flex'
-import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
-import { logo } from '@/constants/images'
 import { ROUTES } from '@/constants/routes'
 import { useMenuContext } from '@/context/menuContext'
 import { useTranslate } from '@/hooks/useTranslate'
-import { laptop, tablet } from '@/styles/breakpoints'
+import { laptop } from '@/styles/breakpoints'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link as RouterLink } from 'react-router-dom'
@@ -48,6 +47,7 @@ const MobileMenuButton = styled(NavItem)`
     display: none;
   `};
 `
+
 const LogoContainer = styled(Flex)`
   ${laptop`
    width: fit-content;
@@ -59,21 +59,6 @@ const LinksContainer = styled(Flex)`
   ${laptop`
     display: flex;
   `}
-`
-
-const Logo = styled(Image)`
-  width: 64px;
-  height: 64px;
-
-  ${tablet`
-    width: 72px;
-    height: 72px;
-    `}
-`
-
-const Link = styled(Button)`
-  padding: 0;
-  margin-right: ${(props) => props.theme.spacing.regular};
 `
 
 const ListContainer = styled(Flex)`
@@ -105,30 +90,7 @@ export const Navbar = () => {
             $justifyContent='space-between'
             $width='100%'
           >
-            <Flex $alignItems='center'>
-              <Link
-                $size='medium'
-                $variant='link'
-                as={RouterLink}
-                to={ROUTES.HOME}
-              >
-                <Logo
-                  $width='64px'
-                  $height='64px'
-                  $borderRadius='50%'
-                  src={`/images/${logo}`}
-                  alt='logo'
-                />
-              </Link>
-              <Flex $direction='column' $justifyContent='center'>
-                <Typography $weight='bold' $size='medium' $isUpperCase={true}>
-                  tierra
-                </Typography>
-                <Typography $weight='bold' $size='medium' $isUpperCase={true}>
-                  y aire
-                </Typography>
-              </Flex>
-            </Flex>
+            <Logo />
             <Flex $alignItems='center'>
               <MobileMenuButton
                 $size='medium'
