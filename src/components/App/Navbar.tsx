@@ -25,6 +25,7 @@ const MobileMenuContainer = styled(Flex)`
 const Nav = styled(Flex)`
   position: relative;
   background-color: ${(props) => props.theme.color.backgroundPrimary};
+  box-shadow: ${(props) => props.theme.boxShadow.primary};
 `
 
 const NavItem = styled(Button)`
@@ -112,7 +113,7 @@ export const Navbar = () => {
                 {text.links.about}
               </Typography>
             </NavItem>
-            <Option $alignItems='center'>
+            <Option $alignItems='center' $gap='0.5rem'>
               <NavItem
                 $variant='link'
                 $size='medium'
