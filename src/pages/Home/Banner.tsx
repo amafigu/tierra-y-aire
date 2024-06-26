@@ -4,7 +4,7 @@ import { Typography } from '@/components/ui/Typography'
 import { educationBanner } from '@/constants/backgroundImages'
 import { hostPrefix } from '@/constants/images'
 import { useTranslate } from '@/hooks/useTranslate'
-import { desktop, tablet } from '@/styles/breakpoints'
+import { desktop, laptop, tablet } from '@/styles/breakpoints'
 import { FC } from 'react'
 import styled from 'styled-components'
 
@@ -13,12 +13,20 @@ const Wrapper = styled(Flex)`
 `
 
 const Container = styled(Flex)`
-  min-height: 400px;
+  height: 360px;
   position: relative;
   pointer-events: none;
 
   ${tablet`
-     min-height: 100%;
+     height: 600px;
+    `}
+
+  ${laptop`
+    height: 700px;
+    `}
+
+  ${desktop`
+    height: 800px;
     `}
 `
 
@@ -80,13 +88,13 @@ export const Banner: FC = () => {
           <Title $size='large' $weight='extraBold'>
             {text.titleFirst}
           </Title>
-          <Title>{text.titleSecond}</Title>
+          <Title  $size='large' $weight='extraBold'>{text.titleSecond}</Title>
           <Flex $direction='column' $margin='1.5rem 0 0 0'>
             <Subtitle $size='small' $weight='normal' $color='secondary'>
               {text.subtitleFirst}
             </Subtitle>
-            <Subtitle>{text.subtitleSecond}</Subtitle>
-            <Subtitle>{text.subtitleThird}</Subtitle>
+            <Subtitle $size='small' $weight='normal' $color='secondary'>{text.subtitleSecond}</Subtitle>
+            <Subtitle $size='small' $weight='normal' $color='secondary'>{text.subtitleThird}</Subtitle>
           </Flex>
         </TextContainer>
 
