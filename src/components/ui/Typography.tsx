@@ -1,6 +1,7 @@
 import { CSSProperties, styled } from 'styled-components'
 
-import { Color, colors } from '@/constants/colors'
+import type { Color, Opacity } from '@/constants/colors'
+import { colors, opacities } from '@/constants/colors'
 
 import type { FontSize } from '@/constants/fontSizes'
 import { fontSizes } from '@/constants/fontSizes'
@@ -19,6 +20,7 @@ type Props = {
   $isUpperCase?: boolean
   $style?: CSSProperties['fontStyle']
   $textAlign?: CSSProperties['textAlign']
+  $opacity?: Opacity
 }
 
 export const Typography = styled.span<Props>`
@@ -33,4 +35,5 @@ export const Typography = styled.span<Props>`
   text-transform: ${(props) => (props.$isUpperCase ? 'uppercase' : 'inherit')};
   font-style: ${(props) => props.$style};
   text-align: ${(props) => props.$textAlign};
+  opacity: ${(props) => props.$opacity && opacities[props.$opacity]};
 `
