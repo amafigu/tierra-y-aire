@@ -1,6 +1,6 @@
 import { Flex } from '@/components/ui/Flex'
 import { Typography } from '@/components/ui/Typography'
-import { desktop, laptop } from '@/styles/breakpoints'
+import { laptop } from '@/styles/breakpoints'
 import { camelCaseToTitleCase } from '@/utils/utils'
 import { FC } from 'react'
 import styled from 'styled-components'
@@ -23,9 +23,6 @@ const Title = styled(Typography)`
 
   ${laptop`
     font-size: ${(props) => props.theme.font.size.huge};
-  `}
-  ${desktop`
-    font-size: ${(props) => props.theme.font.size.extraHuge};
   `}
 `
 
@@ -59,7 +56,6 @@ export const UpperBanner: FC<UpperBannerProps> = ({
       $width='100%'
       $height='50vh'
       $backgroundImage={`/images${backgroundUrl}`}
-      aria-label={title}
     >
       <Content
         $width='80%'
