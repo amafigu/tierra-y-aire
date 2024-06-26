@@ -6,43 +6,43 @@ export interface TestimonialProps {
 export const TESTIMONIALS = [
   {
     name: 'mikeTiseyra',
-    image: 'testimonial1.jpg',
+    image: '/testimonial1.jpg',
   },
   {
     name: 'silvinaRaquel',
-    image: 'testimonial2.jpg',
+    image: '/testimonial2.jpg',
   },
   {
     name: 'luisa',
-    image: 'testimonial3.jpg',
+    image: '/testimonial3.jpg',
   },
   {
     name: 'mumi',
-    image: 'testimonial4.jpg',
+    image: '/testimonial4.jpg',
   },
   {
     name: 'marito',
-    image: 'testimonial5.jpg',
+    image: '/testimonial5.jpg',
   },
   {
     name: 'carlitos',
-    image: 'testimonial6.jpg',
+    image: '/testimonial6.jpg',
   },
   {
     name: 'cheliCastellano',
-    image: 'testimonial7.jpg',
+    image: '/testimonial7.jpg',
   },
   {
     name: 'silvinaPesaresi',
-    image: 'testimonial8.jpg',
+    image: '/testimonial8.jpg',
   },
   {
     name: 'flavia',
-    image: 'testimonial9.jpg',
+    image: '/testimonial9.jpg',
   },
 
   {
     name: 'lilianaMartinez',
-    image: 'testimonial10.jpg',
+    image: '/testimonial10.jpg',
   },
 ]
