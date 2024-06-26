@@ -1,6 +1,7 @@
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
+import { hostPrefix } from '@/constants/images'
 import { laptop } from '@/styles/breakpoints'
 import { FC } from 'react'
 import styled from 'styled-components'
@@ -72,7 +73,7 @@ export const CourseBanner: FC<CourseBannerProps> = ({
             $borderRadius='8px'
             $height='100%'
             alt='students'
-            src={`/images${imageUrl}`}
+            src={`${hostPrefix}${imageUrl}`}
           />
         </ImageContainer>
         <TextContainer

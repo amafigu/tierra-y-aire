@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/Button'
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
+import { hostPrefix } from '@/constants/images'
 import { useTranslate } from '@/hooks/useTranslate'
 import { CourseCard as ICourseCard } from '@/types/Cards'
 import { camelCaseToTitleCase } from '@/utils/utils'
@@ -41,7 +42,7 @@ export const CourseCard: FC<ICourseCard> = ({
       $wrap='wrap'
       aria-labelledby={`${name}-course`}
     >
-      <Img src={`/images/${image}`} alt={`${name} course`} />
+      <Img src={`${hostPrefix}${image}`} alt={`${name} course`} />
       <Box $padding='1.25rem 1.75rem' $width='100%'>
         <Box $height='48px'>
           <Typography

@@ -2,6 +2,7 @@ import { Box } from '@/components/ui/Box'
 import { Flex } from '@/components/ui/Flex'
 import { Typography } from '@/components/ui/Typography'
 import { philosophyBackground } from '@/constants/backgroundImages'
+import { hostPrefix } from '@/constants/images'
 import { useTranslate } from '@/hooks/useTranslate'
 import { laptop } from '@/styles/breakpoints'
 import { forwardRef } from 'react'
@@ -59,7 +60,7 @@ export const PhilosophySection = forwardRef<HTMLDivElement>((_, ref) => {
       $width='100%'
       $alignItems='center'
       $justifyContent='center'
-      $backgroundImage={`/images/${philosophyBackground}`}
+      $backgroundImage={`${hostPrefix}${philosophyBackground}`}
     >
       <Container
         $direction='column'

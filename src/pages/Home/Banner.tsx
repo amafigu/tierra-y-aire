@@ -2,6 +2,7 @@ import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
 import { educationBanner } from '@/constants/backgroundImages'
+import { hostPrefix } from '@/constants/images'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, tablet } from '@/styles/breakpoints'
 import { FC } from 'react'
@@ -93,7 +94,7 @@ export const Banner: FC = () => {
           $width='100%'
           $height='100%'
           $objectFit='cover'
-          src={`/images${educationBanner}`}
+          src={`${hostPrefix}${educationBanner}`}
           alt='Home page background'
         />
       </Container>
