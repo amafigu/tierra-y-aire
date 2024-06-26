@@ -1,12 +1,14 @@
-export const titleCase = (str: string, separator: string): string => {
-  if (str) {
+export const titleCase = (str: string, separator?: string): string => {
+  if (separator) {
     return str
       .split(separator)
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ')
+      .join(' ');
+  } else {
+    return str.charAt(0).toUpperCase() + str.slice(1);
   }
-  return ''
 }
+
 
 export const camelCaseToTitleCase = (str: string): string => {
   if (str) {
@@ -18,10 +20,4 @@ export const camelCaseToTitleCase = (str: string): string => {
       .join(' ')
   }
   return ''
-}
-
-export const checkHttp = (url: string): string => {
-  return url.startsWith('http://') || url.startsWith('https://')
-    ? url
-    : `http://${url}`
 }
