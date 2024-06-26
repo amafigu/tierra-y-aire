@@ -5,6 +5,7 @@ import { navigationMenuItems } from '@/constants/navigationMenuItems'
 import { useMenuContext } from '@/context/menuContext'
 import { useOnNavigate } from '@/hooks/useOnNavigate'
 import { useTranslate } from '@/hooks/useTranslate'
+import { laptop } from '@/styles/breakpoints'
 import { FC } from 'react'
 import styled from 'styled-components'
 
@@ -16,6 +17,11 @@ const List = styled(Flex)`
   background-color: ${(props) => props.theme.color.strockePrimary};
   z-index: ${(props) => props.theme.zIndex.dropdown};
   border-radius: ${(props) => props.theme.borderRadius.small};
+
+  ${laptop`
+    background-color:  ${(props) => props.theme.color.backgroundPrimary};
+    box-shadow:${(props) => props.theme.boxShadow.primary};
+    `}
 `
 
 const ListItem = styled(Button)`
