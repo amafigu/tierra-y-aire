@@ -2,6 +2,7 @@ import { Box } from '@/components/ui/Box'
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
+import { hostPrefix } from '@/constants/images'
 import { TESTIMONIALS, TestimonialProps } from '@/constants/testimonials'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop } from '@/styles/breakpoints'
@@ -152,7 +153,7 @@ export const Carousel: FC = () => {
                     $height='100%'
                     $objectFit='cover'
                     $objectPosition='top'
-                    src={`/images/${testimonial.image}`}
+                    src={`${hostPrefix}${testimonial.image}`}
                     alt='Testimonial'
                   />
                 </ImageContainer>

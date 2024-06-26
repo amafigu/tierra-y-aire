@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/Button'
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
-import { founder } from '@/constants/images'
+import { founder, hostPrefix } from '@/constants/images'
 import { facebookUrl, instagramUrl, youtubeUrl } from '@/constants/midia'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop, tablet } from '@/styles/breakpoints'
@@ -69,8 +69,7 @@ export const FounderSection = forwardRef<HTMLDivElement>((_, ref) => {
           <Img
             $width='100%'
             alt='Artist drumming'
-            className='founderImage'
-            src={`/images/${founder}`}
+            src={`${hostPrefix}${founder}`}
           />
         </ImageContainer>
         <Box>

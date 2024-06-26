@@ -1,5 +1,6 @@
 import { Flex } from '@/components/ui/Flex'
 import { Typography } from '@/components/ui/Typography'
+import { hostPrefix } from '@/constants/images'
 import { laptop } from '@/styles/breakpoints'
 import { camelCaseToTitleCase } from '@/utils/utils'
 import { FC } from 'react'
@@ -55,7 +56,7 @@ export const UpperBanner: FC<UpperBannerProps> = ({
       $alignItems='center'
       $width='100%'
       $height='50vh'
-      $backgroundImage={`/images${backgroundUrl}`}
+      $backgroundImage={`${hostPrefix}${backgroundUrl}`}
     >
       <Content
         $width='80%'

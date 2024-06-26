@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/Button'
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
-import { logo } from '@/constants/images'
+import { hostPrefix, logo } from '@/constants/images'
 import { ROUTES } from '@/constants/routes'
 import { tablet } from '@/styles/breakpoints'
 import { FC } from 'react'
@@ -16,7 +16,7 @@ const Link = styled(Button)`
 const Img = styled(Image)`
   width: 64px;
   height: 64px;
-
+  border-radius: 50%;
   ${tablet`
     width: 72px;
     height: 72px;
@@ -31,7 +31,7 @@ export const Logo: FC = () => {
           $width='64px'
           $height='64px'
           $borderRadius='50%'
-          src={`/images/${logo}`}
+          src={`${hostPrefix}${logo}`}
           alt='logo'
         />
       </Link>

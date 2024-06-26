@@ -2,7 +2,7 @@ import { Box } from '@/components/ui/Box'
 import { Flex } from '@/components/ui/Flex'
 import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
-import { logo } from '@/constants/images'
+import { hostPrefix, logo } from '@/constants/images'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop, tablet } from '@/styles/breakpoints'
 import { FC } from 'react'
@@ -70,7 +70,7 @@ export const InspirationSection: FC = () => {
               $height='82px'
               $borderRadius='50%'
               alt='logo'
-              src={`/images/${logo}`}
+              src={`${hostPrefix}${logo}`}
             />
           </Box>
           <Title $size='large' $weight='extraBold'>
