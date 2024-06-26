@@ -5,26 +5,28 @@ import { Typography } from '@/components/ui/Typography'
 import { TESTIMONIALS, TestimonialProps } from '@/constants/testimonials'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop } from '@/styles/breakpoints'
-import { camelCaseToTitleCase } from '@/utils/utils'
+import { camelCaseToTitleCase, titleCase } from '@/utils/utils'
 import {
   faChevronLeft,
   faChevronRight,
-  faQuoteLeft,
-  faQuoteRight,
+  faQuoteLeft
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 import { FC, useCallback } from 'react'
 import styled from 'styled-components'
 import { Button } from '../ui/Button'
 
-const Wrapper = styled(Box)`
+const Wrapper = styled(Flex)`
   background: ${(props) => props.theme.color.backgroundSecondary};
   padding-top: ${(props) => props.theme.spacing.large};
   padding-bottom: ${(props) => props.theme.spacing.extraLarge};
+  width: 100%;
 
   .embla {
     overflow: hidden;
+    width: 100%;
   }
   .embla__container {
     display: flex;
@@ -36,29 +38,44 @@ const Wrapper = styled(Box)`
 `
 
 const Title = styled(Typography)`
-  width: 100%;
+  width: 90%;
   user-select: none;
   text-align: center;
-  margin-bottom: ${(props) => props.theme.spacing.large};
+      text-align: left;
+    margin: 0 auto ${(props) => props.theme.spacing.large};
+
 `
+
 const Container = styled(Box)`
   position: relative;
-
   margin: 0 auto;
+  width: 100%;
 `
 
 const Testimonial = styled(Flex)`
   cursor: pointer;
   user-select: none;
-
+  padding: 0 1rem;
+  gap: 1rem;
   ${desktop`
     flex-direction: row;
+    gap: 4rem;
   `}
 `
 
 const ImageContainer = styled(Flex)`
+  width: 100%;
   max-width: 460px;
   max-height: 460px;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+`
+
+const TextContainer = styled(Flex)`
+  max-width: 460px;
+  max-height: 460px; 
+   margin: 20px 0;
 `
 
 const Text = styled(Typography)`
@@ -66,7 +83,6 @@ const Text = styled(Typography)`
   opacity: ${(props) => props.theme.opacity.primary};
 
   ${laptop`
-    padding: 20px 0;
     font-size: ${(props) => props.theme.font.size.medium};
   `}
 `
@@ -77,6 +93,7 @@ const CarouselBtn = styled(Button)`
   top: 50%;
   border: none;
   background: none;
+  transform: translateY(-50%);
   ${laptop`
     display: flex;
   `}
@@ -94,8 +111,10 @@ export const Carousel: FC = () => {
   const translate = useTranslate()
   const text = translate.components.testimonialCarousel
   const [emblaRef, emblaAPi] = useEmblaCarousel({
-    loop: true,
-  })
+    loop: true
+  },[
+    Autoplay({delay: 6000})
+  ])
 
   const scrollPrev = useCallback(() => {
     if (emblaAPi) emblaAPi.scrollPrev()
@@ -106,28 +125,27 @@ export const Carousel: FC = () => {
   }, [emblaAPi])
 
   return (
-    <Wrapper as='section' $width='100%' aria-label='Testimonials'>
+    <Wrapper as='section' $direction='column' $width='90%' $margin='0 auto' aria-label='Testimonials'>
       <Title
         as='div'
         $color='primary'
-        $size='large'
+        $size='semiLarge'
         $weight='extraBold'
-        $isUpperCase={true}
+       
       >
-        {text.title}
+        {titleCase(text.title)}
       </Title>
       <Container className='embla' ref={emblaRef}>
         <Box className='embla__container'>
           {TESTIMONIALS.map((testimonial: TestimonialProps, index: number) => (
-            <Flex as='article' key={index} className='embla__slide'>
+            <Box as='article' key={index} className='embla__slide'>
               <Testimonial
                 $direction='column'
                 $alignItems='center'
                 $justifyContent='center'
-                $gap='4rem'
                 aria-label='Testimonial'
               >
-                <ImageContainer $alignItems='center' $justifyContent='center'>
+                <ImageContainer>
                   <Image
                     $borderRadius='8px'
                     $width='100%'
@@ -138,38 +156,31 @@ export const Carousel: FC = () => {
                     alt='Testimonial'
                   />
                 </ImageContainer>
-                <Flex
+                <TextContainer
                   $alignItems='center'
                   $justifyContent='center'
                   $direction='column'
-                  $width='460px'
+                  $width='100%'
                   aria-label='testimonial text'
                 >
-                  <Flex $justifyContent='flex-start' $width='100%'>
-                    <FontAwesomeIcon
+                
+                  <Flex $direction='column' $justifyContent='center' $alignItems='flex-start'>
+                  <FontAwesomeIcon
                       beat={true}
                       color='#ed068a'
                       icon={faQuoteLeft}
+                      size='xl'
                     />
-                  </Flex>
-                  <Flex $alignItems='center'>
-                    <Text $size='small' $weight='normal'>
+                    <Text $size='small' $weight='normal' $color='secondary'>
                       {text[testimonial.name]}
                     </Text>
-                  </Flex>
-                  <Typography $size='medium' $weight='bold' $color='branding'>
+                    <Typography $size='medium' $weight='bold' $color='branding'>
                     {camelCaseToTitleCase(testimonial.name)}
                   </Typography>
-                  <Flex $justifyContent='flex-end' $width='100%'>
-                    <FontAwesomeIcon
-                      beat={true}
-                      color='#ed068a'
-                      icon={faQuoteRight}
-                    />
                   </Flex>
-                </Flex>
+                </TextContainer>
               </Testimonial>
-            </Flex>
+            </Box>
           ))}
         </Box>
         <ButtonLeft
