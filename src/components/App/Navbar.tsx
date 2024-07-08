@@ -107,6 +107,16 @@ export const Navbar = () => {
               $variant='link'
               $size='medium'
               as={RouterLink}
+              to={ROUTES.CONCERTS}
+            >
+              <Typography $isUpperCase={true} $size='small' $weight='semibold'>
+                {text.links.concerts}
+              </Typography>
+            </NavItem>
+            <NavItem
+              $variant='link'
+              $size='medium'
+              as={RouterLink}
               to={ROUTES.ABOUT}
             >
               <Typography $isUpperCase={true} $size='small' $weight='semibold'>

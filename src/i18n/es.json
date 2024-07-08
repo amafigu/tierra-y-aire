@@ -143,6 +143,7 @@
 
     "navbar": {
       "links": {
+        "concerts": "conciertos",
         "about": "proyecto",
         "courses": "nuestros cursos"
       },

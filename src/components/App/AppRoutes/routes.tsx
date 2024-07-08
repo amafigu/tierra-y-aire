@@ -1,5 +1,6 @@
 import { ROUTES } from '@/constants/routes'
 import { About } from '@/pages/About'
+import Concerts from '@/pages/Concerts'
 import { Home } from '@/pages/Home'
 import { PageNotFound } from '@/pages/PageNotFound'
 import { EnsembleCompositionCourses } from '@/pages/courses/EnsembleCompositionCourses'
@@ -29,4 +30,5 @@ export const routes = [
   },
 
   { path: ROUTES.NOT_FOUND, element: <PageNotFound /> },
+  { path: ROUTES.CONCERTS, element: <Concerts /> },
 ]

@@ -143,6 +143,7 @@
 
     "navbar": {
       "links": {
+        "concerts": "concerts",
         "about": "about us",
         "courses": "our courses"
       },
