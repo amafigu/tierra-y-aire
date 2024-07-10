@@ -32,7 +32,7 @@ export const SectionsNavigator: FC<SectionsNavigatorProps> = ({ items }) => {
   const translate = useTranslate()
   const text = translate.components.navigationMenu
 
-  const handleNavigation = (ref: RefObject<HTMLDivElement>) => {
+  const navigateToSection = (ref: RefObject<HTMLDivElement>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' })
     }
@@ -46,7 +46,7 @@ export const SectionsNavigator: FC<SectionsNavigatorProps> = ({ items }) => {
             as='li'
             $size='small'
             $variant='link'
-            onClick={() => handleNavigation(item.ref)}
+            onClick={() => navigateToSection(item.ref)}
             key={item.name}
           >
             <Typography $size='small' $weight='medium' $isUpperCase={true}>
