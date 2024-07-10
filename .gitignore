@@ -25,4 +25,5 @@ dist-ssr
 
 # Env file
 
+.env.production
 .env
