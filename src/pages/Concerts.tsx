@@ -72,19 +72,23 @@ const ConcertButton = styled(Button)`
 
 const Concerts: FC = () => {
   const { loading, error, data } = useQuery(GET_CONCERTS);
-  const translate = useTranslate();
+  const { translate } = useTranslate();
   const text = translate.pages.concerts;
+  let sortedConcerts = []
 
-  console.log(data)
+  if(data?.getConcerts) {
+    sortedConcerts= [...data.getConcerts].sort(
+      (a: Concert, b: Concert) => Number(b.concertDate) - Number(a.concertDate)
+    );
+  }
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-  
-  const sortedConcerts = [...data.getConcerts].sort(
-    (a: Concert, b: Concert) => Number(b.concertDate) - Number(a.concertDate)
-  );
+  if(error) {
+    console.error(error.message)
+  }
+
   return (
     <Container $direction='column' $alignItems='center' $justifyContent='center' >
+      {loading &&  (<p>Loading...</p>)}
       <Title $size='semiLarge' $weight='bold' $isUpperCase={true}>{text.title}</Title>
       <Content as="section" $width="90%" $margin="0 auto">
         <List aria-label="concerts list" $direction='column' $margin="0 auto" $width='100%'>
@@ -108,7 +112,6 @@ const Concerts: FC = () => {
                 <ConcertButton
                   $size="medium"
                   $variant="primary"
-                
                 >
                   <Typography $size='small' $isUpperCase={true}>{"ticket"}</Typography>
                 </ConcertButton>
