@@ -32,7 +32,7 @@ export const CourseCard: FC<ICourseCard> = ({
   path,
   image,
 }) => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.courseCards
 
   return (

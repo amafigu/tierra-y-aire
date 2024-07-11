@@ -65,7 +65,7 @@ const EmailBtn = styled(EmailButton)`
 `
 export const MobileMenu: FC = () => {
   const { onNavigate } = useOnNavigate()
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.navbar
   const { showMobile, setShowMobile, showCourses, setShowCourses } =
     useMenuContext()
@@ -90,6 +90,12 @@ export const MobileMenu: FC = () => {
           <ContainerItem as='li'>
             <LanguagesSelector />
           </ContainerItem>
+          <ListItem
+            as='li'
+            onClick={() => onNavigate([setShowMobile], ROUTES.CONCERTS)}
+          >
+            <Typography $isUpperCase={true}>{text.links.concerts}</Typography>
+          </ListItem>
           <ListItem
             as='li'
             onClick={() => onNavigate([setShowMobile], ROUTES.ABOUT)}

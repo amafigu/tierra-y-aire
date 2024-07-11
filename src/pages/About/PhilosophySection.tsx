@@ -50,7 +50,7 @@ const Content = styled(Box)`
 `
 
 export const PhilosophySection = forwardRef<HTMLDivElement>((_, ref) => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.pages.about
 
   return (

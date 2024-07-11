@@ -73,7 +73,7 @@ const Img = styled(Image)`
 `
 
 export const Banner: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.homeBanner
 
   return (

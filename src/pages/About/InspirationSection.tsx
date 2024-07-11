@@ -57,7 +57,7 @@ const TextContainer = styled(Box)`
 `
 
 export const InspirationSection: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.pages.about.inspirationAndEducation
 
   return (

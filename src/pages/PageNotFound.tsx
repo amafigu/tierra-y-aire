@@ -90,7 +90,7 @@ const Wrapper = styled.main`
 `
 
 export const PageNotFound: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.pages.pageNotFound
   return (
     <Wrapper aria-label='Page not found'>

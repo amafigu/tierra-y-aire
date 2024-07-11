@@ -12,7 +12,7 @@ const EmailBtn = styled(Button)`
 `
 
 export const EmailButton: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.navbar
   const { setShowMobile } = useMenuContext()
 

@@ -73,7 +73,7 @@ export const Navbar = () => {
   const { showMobile, setShowMobile, showCourses, setShowCourses } =
     useMenuContext()
 
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.navbar
 
   return (
@@ -103,6 +103,16 @@ export const Navbar = () => {
             </Flex>
           </LogoContainer>
           <LinksContainer $alignItems='center' $gap='1.75rem'>
+            <NavItem
+              $variant='link'
+              $size='medium'
+              as={RouterLink}
+              to={ROUTES.CONCERTS}
+            >
+              <Typography $isUpperCase={true} $size='small' $weight='semibold'>
+                {text.links.concerts}
+              </Typography>
+            </NavItem>
             <NavItem
               $variant='link'
               $size='medium'

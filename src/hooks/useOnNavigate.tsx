@@ -8,6 +8,7 @@ export const useOnNavigate = () => {
   const onNavigate = (setters: Setter[], route: string) => {
     setters.forEach((setter) => setter(false))
     navigate(route)
+    window.scroll(0, 0)
   }
 
   return { onNavigate }

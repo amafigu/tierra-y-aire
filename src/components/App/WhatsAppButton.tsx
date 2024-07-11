@@ -1,7 +1,7 @@
 import { whatsappUrl } from '@/constants/midia'
 import { useMenuContext } from '@/context/menuContext'
 import { useTranslate } from '@/hooks/useTranslate'
-import { laptop } from '@/styles/breakpoints' // Import your breakpoint
+import { laptop } from '@/styles/breakpoints'; // Import your breakpoint
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FC } from 'react'
@@ -42,7 +42,7 @@ const Container = styled(Flex)`
 `
 
 export const WhatsAppButton: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.whatsAppButton
   const { showMobile } = useMenuContext()
 

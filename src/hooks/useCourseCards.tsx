@@ -11,7 +11,7 @@ interface CourseCard {
 }
 
 export const useCourseCards = (): { courseCards: CourseCard[] } => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const textCards: CourseCardsTranslations =
     translate.components.courseCards.cards
   const ROUTE = ROUTES.COURSES

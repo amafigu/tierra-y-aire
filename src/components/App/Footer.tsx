@@ -4,6 +4,8 @@ import { Typography } from '@/components/ui/Typography'
 import { facebookUrl, instagramUrl, youtubeUrl } from '@/constants/midia'
 import { navigationMenuItems } from '@/constants/navigationMenuItems'
 import { ROUTES } from '@/constants/routes'
+import { useMenuContext } from '@/context/menuContext'
+import { useOnNavigate } from '@/hooks/useOnNavigate'
 import { useTranslate } from '@/hooks/useTranslate'
 import { laptop, tablet } from '@/styles/breakpoints'
 import { camelCaseToTitleCase } from '@/utils/utils'
@@ -54,12 +56,9 @@ const Title = styled(Typography)`
   margin-bottom: ${(props) => props.theme.spacing.small};
 `
 
-const StyledLink = styled(Link)`
-  padding: ${(props) => props.theme.spacing.smallest} 0;
-`
-
 const StyledContent = styled(Typography)`
   font-size: ${(props) => props.theme.font.size.small};
+  padding: ${(props) => props.theme.spacing.smallest} 0;
   color: ${(props) => props.theme.color.light};
 
   &:hover {
@@ -82,7 +81,9 @@ const LogoColumn = styled(Column)`
       `}
 `
 export const Footer: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
+  const { onNavigate } = useOnNavigate()
+  const { setShowMobile, setShowCourses } = useMenuContext()
   const text = translate.components.footer
 
   return (
@@ -103,26 +104,22 @@ export const Footer: FC = () => {
           <Title $size='medium' $weight='semibold'>
             {camelCaseToTitleCase(text.linksColumn.title)}
           </Title>
-          <StyledLink to={ROUTES.ABOUT}>
-            <StyledContent>
+            <StyledContent onClick={() => onNavigate([setShowMobile, setShowCourses],ROUTES.ABOUT)}>
               {camelCaseToTitleCase(text.linksColumn.about)}
             </StyledContent>
-          </StyledLink>
         </Column>
         <Column $direction='column' $width='100%'>
           <Title $size='medium' $weight='semibold'>
             {camelCaseToTitleCase(text.coursesColumn.title)}
           </Title>
           {navigationMenuItems.map((item) => (
-            <StyledLink to={item.ref} key={item.name}>
-              <StyledContent>
+              <StyledContent key={item.name} onClick={() => onNavigate([setShowMobile, setShowCourses],item.ref)}>
                 {camelCaseToTitleCase(
                   text.coursesColumn[
                     item.name as keyof typeof text.coursesColumn
                   ]
                 )}
               </StyledContent>
-            </StyledLink>
           ))}
         </Column>
         <Column $direction='column'>
