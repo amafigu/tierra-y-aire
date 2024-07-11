@@ -73,7 +73,7 @@ export const Navbar = () => {
   const { showMobile, setShowMobile, showCourses, setShowCourses } =
     useMenuContext()
 
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.navbar
 
   return (

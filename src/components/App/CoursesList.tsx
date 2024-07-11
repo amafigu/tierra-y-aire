@@ -41,7 +41,7 @@ const ListItem = styled(Button)`
 export const CoursesList: FC = () => {
   const { onNavigate } = useOnNavigate()
   const { setShowMobile, setShowCourses } = useMenuContext()
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.pages.courses
 
   return (

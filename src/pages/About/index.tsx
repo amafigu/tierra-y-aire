@@ -17,7 +17,7 @@ const Container = styled(Box)`
 `
 
 export const About: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.pages.about
 
   const schoolSectionRef = useRef<HTMLDivElement | null>(null)

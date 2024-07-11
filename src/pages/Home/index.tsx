@@ -7,7 +7,6 @@ import { useCourseCards } from '@/hooks/useCourseCards'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop, tablet } from '@/styles/breakpoints'
 import { CourseCard as ICourseCard } from '@/types/Cards'
-
 import { FC } from 'react'
 import styled from 'styled-components'
 import { Banner } from './Banner'
@@ -53,9 +52,10 @@ const TextWrapper = styled(Flex)`
 `
 
 export const Home: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const { courseCards } = useCourseCards()
   const text = translate.pages.home
+
 
   return (
     <Flex as='main' aria-label='Home page'>

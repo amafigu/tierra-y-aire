@@ -8,9 +8,9 @@ import { facebookUrl, instagramUrl, youtubeUrl } from '@/constants/midia'
 import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop, tablet } from '@/styles/breakpoints'
 import {
-  faFacebookF,
-  faInstagram,
-  faYoutube,
+    faFacebookF,
+    faInstagram,
+    faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { forwardRef } from 'react'
@@ -52,7 +52,7 @@ const Img = styled(Image)`
 `
 
 export const FounderSection = forwardRef<HTMLDivElement>((_, ref) => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.founderBanner
 
   return (

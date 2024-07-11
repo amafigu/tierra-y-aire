@@ -8,9 +8,9 @@ import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop } from '@/styles/breakpoints'
 import { camelCaseToTitleCase, titleCase } from '@/utils/utils'
 import {
-  faChevronLeft,
-  faChevronRight,
-  faQuoteLeft
+    faChevronLeft,
+    faChevronRight,
+    faQuoteLeft
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Autoplay from 'embla-carousel-autoplay'
@@ -109,7 +109,7 @@ const ButtonRight = styled(CarouselBtn)`
 `
 
 export const Carousel: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.testimonialCarousel
   const [emblaRef, emblaAPi] = useEmblaCarousel({
     loop: true

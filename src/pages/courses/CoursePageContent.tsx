@@ -17,7 +17,7 @@ export const CoursePageContent: FC<CoursePageContentProps> = ({
   pageTranslationObj,
   invertLayout,
 }) => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.pages.courses
 
   return (

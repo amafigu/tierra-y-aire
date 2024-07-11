@@ -8,9 +8,9 @@ import { useTranslate } from '@/hooks/useTranslate'
 import { laptop, tablet } from '@/styles/breakpoints'
 import { camelCaseToTitleCase } from '@/utils/utils'
 import {
-  faFacebookF,
-  faInstagram,
-  faYoutube,
+    faFacebookF,
+    faInstagram,
+    faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FC } from 'react'
@@ -82,7 +82,7 @@ const LogoColumn = styled(Column)`
       `}
 `
 export const Footer: FC = () => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.footer
 
   return (

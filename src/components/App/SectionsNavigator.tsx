@@ -29,7 +29,7 @@ const ListItem = styled(Button)`
 `
 
 export const SectionsNavigator: FC<SectionsNavigatorProps> = ({ items }) => {
-  const translate = useTranslate()
+  const { translate } = useTranslate()
   const text = translate.components.navigationMenu
 
   const navigateToSection = (ref: RefObject<HTMLDivElement>) => {
