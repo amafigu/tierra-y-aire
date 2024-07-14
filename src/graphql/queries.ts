@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 export const GET_CONCERTS = gql`
   query GetConcerts {
@@ -12,4 +12,4 @@ export const GET_CONCERTS = gql`
       concertDate
     }
   }
-`;
+`

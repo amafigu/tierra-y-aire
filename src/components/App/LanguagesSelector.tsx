@@ -1,5 +1,5 @@
-import { useLocaleContext } from '@/context/localeContext'
 import { useMenuContext } from '@/context/menuContext'
+import { useTranslate } from '@/hooks/useTranslate'
 import { FC } from 'react'
 import styled from 'styled-components'
 import { Typography } from '../ui/Typography'
@@ -41,7 +41,7 @@ const ListItem = styled.li`
 `
 
 export const LanguagesSelector: FC = () => {
-  const { setLanguage, language } = useLocaleContext()
+  const { setLanguage, language } = useTranslate()
   const { setShowMobile, setShowLanguages } = useMenuContext()
 
   const changeLanguage = (lang: 'es' | 'en') => {

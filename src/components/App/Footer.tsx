@@ -26,11 +26,11 @@ const Wrapper = styled(Flex)`
 const Columns = styled(Flex)`
   gap: 2rem;
   height: auto;
-  padding-top: ${(props) => props.theme.spacing.semiExtraLarge};
+  padding: ${(props) => props.theme.spacing.semiExtraLarge} 0;
   text-align: center;
 
   ${tablet`
-    padding-top: ${(props) => props.theme.spacing.huge};
+    padding-top: ${(props) => props.theme.spacing.huge} 0;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
@@ -60,7 +60,7 @@ const StyledContent = styled(Typography)`
   font-size: ${(props) => props.theme.font.size.small};
   padding: ${(props) => props.theme.spacing.smallest} 0;
   color: ${(props) => props.theme.color.light};
-
+  cursor: pointer;
   &:hover {
     color: ${(props) => props.theme.color.branding};
   }
@@ -80,6 +80,18 @@ const LogoColumn = styled(Column)`
       align-items: flex-start;
       `}
 `
+
+const Copyright = styled(Flex)`
+  ${laptop`
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    span {
+      margin: 0;
+    }
+    `}
+`
+
 export const Footer: FC = () => {
   const { translate } = useTranslate()
   const { onNavigate } = useOnNavigate()
@@ -104,22 +116,31 @@ export const Footer: FC = () => {
           <Title $size='medium' $weight='semibold'>
             {camelCaseToTitleCase(text.linksColumn.title)}
           </Title>
-            <StyledContent onClick={() => onNavigate([setShowMobile, setShowCourses],ROUTES.ABOUT)}>
-              {camelCaseToTitleCase(text.linksColumn.about)}
-            </StyledContent>
+          <StyledContent
+            onClick={() =>
+              onNavigate([setShowMobile, setShowCourses], ROUTES.ABOUT)
+            }
+          >
+            {camelCaseToTitleCase(text.linksColumn.about)}
+          </StyledContent>
         </Column>
         <Column $direction='column' $width='100%'>
           <Title $size='medium' $weight='semibold'>
             {camelCaseToTitleCase(text.coursesColumn.title)}
           </Title>
           {navigationMenuItems.map((item) => (
-              <StyledContent key={item.name} onClick={() => onNavigate([setShowMobile, setShowCourses],item.ref)}>
-                {camelCaseToTitleCase(
-                  text.coursesColumn[
-                    item.name as keyof typeof text.coursesColumn
-                  ]
-                )}
-              </StyledContent>
+            <StyledContent
+              key={item.name}
+              onClick={() =>
+                onNavigate([setShowMobile, setShowCourses], item.ref)
+              }
+            >
+              {camelCaseToTitleCase(
+                text.coursesColumn[
+                  item.name as keyof typeof text.coursesColumn
+                ],
+              )}
+            </StyledContent>
           ))}
         </Column>
         <Column $direction='column'>
@@ -139,11 +160,11 @@ export const Footer: FC = () => {
           </IconsContainer>
         </Column>
       </Columns>
-      <Flex
+      <Copyright
         $direction='column'
         $alignItems='center'
         $padding='0 1.5rem'
-        $margin='2rem 0 4.5rem 0'
+        $margin='0 0 4.5rem 0'
       >
         <Typography
           $size='small'
@@ -162,7 +183,7 @@ export const Footer: FC = () => {
         >
           {text.copyrightSecond}
         </Typography>
-      </Flex>
+      </Copyright>
     </Wrapper>
   )
 }

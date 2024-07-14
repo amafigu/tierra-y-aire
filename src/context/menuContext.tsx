@@ -1,21 +1,31 @@
-import React, { ReactNode, createContext, useContext, useState } from 'react'
+import {
+  Dispatch,
+  FC,
+  ReactNode,
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+} from 'react'
 
-interface MenuContextProps {
+export interface MenuContextTypes {
   showMobile: boolean
-  setShowMobile: React.Dispatch<React.SetStateAction<boolean>>
+  setShowMobile: Dispatch<SetStateAction<boolean>>
   showLanguages: boolean
-  setShowLanguages: React.Dispatch<React.SetStateAction<boolean>>
+  setShowLanguages: Dispatch<SetStateAction<boolean>>
   showCourses: boolean
-  setShowCourses: React.Dispatch<React.SetStateAction<boolean>>
+  setShowCourses: Dispatch<SetStateAction<boolean>>
 }
 
-const MenuContext = createContext<MenuContextProps | undefined>(undefined)
+export const MenuContext = createContext<MenuContextTypes | undefined>(
+  undefined,
+)
 
 interface MenuProviderProps {
   children: ReactNode
 }
 
-export const MenuProvider: React.FC<MenuProviderProps> = ({ children }) => {
+export const MenuProvider: FC<MenuProviderProps> = ({ children }) => {
   const [showMobile, setShowMobile] = useState<boolean>(false)
   const [showLanguages, setShowLanguages] = useState<boolean>(false)
   const [showCourses, setShowCourses] = useState<boolean>(false)
@@ -36,7 +46,7 @@ export const MenuProvider: React.FC<MenuProviderProps> = ({ children }) => {
   )
 }
 
-export const useMenuContext = (): MenuContextProps => {
+export const useMenuContext = (): MenuContextTypes => {
   const context = useContext(MenuContext)
   if (context === undefined) {
     throw new Error('useMenuContext must be used within a MenuProvider')

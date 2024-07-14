@@ -1,14 +1,14 @@
-import { LocaleContext } from "@/context/localeContext"
-import en from "@/i18n/en.json"
-import es from "@/i18n/es.json"
-import { act, renderHook } from "@testing-library/react"
-import { FC, ReactNode, useState } from "react"
-import { useTranslate } from "./useTranslate"
+import { LocaleContext } from '@/context/localeContext'
+import en from '@/i18n/en.json'
+import es from '@/i18n/es.json'
+import { act, renderHook } from '@testing-library/react'
+import { FC, ReactNode, useState } from 'react'
+import { useTranslate } from './useTranslate'
 
 const languages = { en, es }
 
 const ContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<keyof typeof languages>("en")
+  const [language, setLanguage] = useState<keyof typeof languages>('en')
 
   return (
     <LocaleContext.Provider
@@ -24,19 +24,19 @@ const ContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
   )
 }
 
-describe("useTranslation hook", () => {
-  test("change from English to Spanish", () => {
+describe('useTranslation hook', () => {
+  test('change from English to Spanish', () => {
     const { result } = renderHook(() => useTranslate(), {
       wrapper: ContextWrapper,
     })
     expect(result.current.translate).toEqual(languages.en)
-    expect(result.current.language).toBe("en")
+    expect(result.current.language).toBe('en')
 
     act(() => {
-      result.current.setLanguage("es")
+      result.current.setLanguage('es')
     })
 
-    expect(result.current.language).toBe("es")
+    expect(result.current.language).toBe('es')
     expect(result.current.translate).toEqual(languages.es)
   })
 })

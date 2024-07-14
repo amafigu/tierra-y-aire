@@ -92,7 +92,10 @@ export const EducationSection = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <Section ref={ref} as='section' $direction='column' $alignItems='center'>
       <Container>
-        <Image src={`${hostPrefix}${educationBanner}`} alt='inspiration section' />
+        <Image
+          src={`${hostPrefix}${educationBanner}`}
+          alt='inspiration section'
+        />
         <TextContainer
           $width='100%'
           $justifyContent='center'

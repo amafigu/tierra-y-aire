@@ -56,7 +56,6 @@ export const Home: FC = () => {
   const { courseCards } = useCourseCards()
   const text = translate.pages.home
 
-
   return (
     <Flex as='main' aria-label='Home page'>
       <Flex $direction='column' $justifyContent='center' $width='100%'>

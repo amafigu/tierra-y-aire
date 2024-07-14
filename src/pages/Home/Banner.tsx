@@ -88,13 +88,19 @@ export const Banner: FC = () => {
           <Title $size='large' $weight='extraBold'>
             {text.titleFirst}
           </Title>
-          <Title  $size='large' $weight='extraBold'>{text.titleSecond}</Title>
+          <Title $size='large' $weight='extraBold'>
+            {text.titleSecond}
+          </Title>
           <Flex $direction='column' $margin='1.5rem 0 0 0'>
             <Subtitle $size='small' $weight='normal' $color='secondary'>
               {text.subtitleFirst}
             </Subtitle>
-            <Subtitle $size='small' $weight='normal' $color='secondary'>{text.subtitleSecond}</Subtitle>
-            <Subtitle $size='small' $weight='normal' $color='secondary'>{text.subtitleThird}</Subtitle>
+            <Subtitle $size='small' $weight='normal' $color='secondary'>
+              {text.subtitleSecond}
+            </Subtitle>
+            <Subtitle $size='small' $weight='normal' $color='secondary'>
+              {text.subtitleThird}
+            </Subtitle>
           </Flex>
         </TextContainer>
 
