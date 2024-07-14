@@ -36,7 +36,6 @@ const sizeStyle = {
   `,
 }
 
-// Mail Button primary, WhatsAppButton secondary, CardLinks Terciary,
 const variantStyle = {
   primary: css`
     color: ${(props) => props.theme.color.secondary};

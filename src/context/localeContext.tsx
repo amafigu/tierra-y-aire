@@ -21,7 +21,7 @@ export interface LocaleContextTypes {
 }
 
 export const LocaleContext = createContext<LocaleContextTypes | undefined>(
-  undefined
+  undefined,
 )
 
 export const LocaleContextProvider = ({
@@ -49,7 +49,7 @@ export const useLocaleContext = () => {
   const context = useContext(LocaleContext)
   if (context === undefined) {
     throw new Error(
-      'useLocaleContext must be used within a LocaleContextProvider'
+      'useLocaleContext must be used within a LocaleContextProvider',
     )
   }
   return context

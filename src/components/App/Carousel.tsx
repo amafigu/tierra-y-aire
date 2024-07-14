@@ -8,9 +8,9 @@ import { useTranslate } from '@/hooks/useTranslate'
 import { desktop, laptop } from '@/styles/breakpoints'
 import { camelCaseToTitleCase, titleCase } from '@/utils/utils'
 import {
-    faChevronLeft,
-    faChevronRight,
-    faQuoteLeft
+  faChevronLeft,
+  faChevronRight,
+  faQuoteLeft,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Autoplay from 'embla-carousel-autoplay'
@@ -42,9 +42,8 @@ const Title = styled(Typography)`
   width: 90%;
   user-select: none;
   text-align: center;
-      text-align: left;
-    margin: 0 auto ${(props) => props.theme.spacing.large};
-
+  text-align: left;
+  margin: 0 auto ${(props) => props.theme.spacing.large};
 `
 
 const Container = styled(Box)`
@@ -68,15 +67,15 @@ const ImageContainer = styled(Flex)`
   width: 100%;
   max-width: 460px;
   max-height: 460px;
-  overflow:hidden;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
 `
 
 const TextContainer = styled(Flex)`
   max-width: 460px;
-  max-height: 460px; 
-   margin: 20px 0;
+  max-height: 460px;
+  margin: 20px 0;
 `
 
 const Text = styled(Typography)`
@@ -111,11 +110,12 @@ const ButtonRight = styled(CarouselBtn)`
 export const Carousel: FC = () => {
   const { translate } = useTranslate()
   const text = translate.components.testimonialCarousel
-  const [emblaRef, emblaAPi] = useEmblaCarousel({
-    loop: true
-  },[
-    Autoplay({delay: 6000})
-  ])
+  const [emblaRef, emblaAPi] = useEmblaCarousel(
+    {
+      loop: true,
+    },
+    [Autoplay({ delay: 6000 })],
+  )
 
   const scrollPrev = useCallback(() => {
     if (emblaAPi) emblaAPi.scrollPrev()
@@ -126,14 +126,14 @@ export const Carousel: FC = () => {
   }, [emblaAPi])
 
   return (
-    <Wrapper as='section' $direction='column' $width='90%' $margin='0 auto' aria-label='Testimonials'>
-      <Title
-        as='div'
-        $color='primary'
-        $size='semiLarge'
-        $weight='extraBold'
-       
-      >
+    <Wrapper
+      as='section'
+      $direction='column'
+      $width='90%'
+      $margin='0 auto'
+      aria-label='Testimonials'
+    >
+      <Title as='div' $color='primary' $size='semiLarge' $weight='extraBold'>
         {titleCase(text.title)}
       </Title>
       <Container className='embla' ref={emblaRef}>
@@ -164,9 +164,12 @@ export const Carousel: FC = () => {
                   $width='100%'
                   aria-label='testimonial text'
                 >
-                
-                  <Flex $direction='column' $justifyContent='center' $alignItems='flex-start'>
-                  <FontAwesomeIcon
+                  <Flex
+                    $direction='column'
+                    $justifyContent='center'
+                    $alignItems='flex-start'
+                  >
+                    <FontAwesomeIcon
                       beat={true}
                       color='#ed068a'
                       icon={faQuoteLeft}
@@ -176,8 +179,8 @@ export const Carousel: FC = () => {
                       {text[testimonial.name]}
                     </Text>
                     <Typography $size='medium' $weight='bold' $color='branding'>
-                    {camelCaseToTitleCase(testimonial.name)}
-                  </Typography>
+                      {camelCaseToTitleCase(testimonial.name)}
+                    </Typography>
                   </Flex>
                 </TextContainer>
               </Testimonial>

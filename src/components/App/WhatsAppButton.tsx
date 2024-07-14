@@ -1,7 +1,7 @@
 import { whatsappUrl } from '@/constants/midia'
 import { useMenuContext } from '@/context/menuContext'
 import { useTranslate } from '@/hooks/useTranslate'
-import { laptop } from '@/styles/breakpoints'; // Import your breakpoint
+import { laptop } from '@/styles/breakpoints'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FC } from 'react'
