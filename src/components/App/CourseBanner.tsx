@@ -3,6 +3,7 @@ import { Image } from '@/components/ui/Image'
 import { Typography } from '@/components/ui/Typography'
 import { hostPrefix } from '@/constants/images'
 import { laptop } from '@/styles/breakpoints'
+import { titleCase } from '@/utils/utils'
 import { FC } from 'react'
 import styled from 'styled-components'
 
@@ -87,7 +88,7 @@ export const CourseBanner: FC<CourseBannerProps> = ({
               $size='extraLarge'
               $weight='bold'
             >
-              {name}
+              {titleCase(name)}
             </Typography>
             <Typography $size='medium' $weight='medium'>
               {text}
