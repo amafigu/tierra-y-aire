@@ -6,11 +6,11 @@ import { Typography } from '@/components/ui/Typography'
 import { founder, hostPrefix } from '@/constants/images'
 import { facebookUrl, instagramUrl, youtubeUrl } from '@/constants/midia'
 import { useTranslate } from '@/hooks/useTranslate'
-import { desktop, laptop, tablet } from '@/styles/breakpoints'
+import { tablet } from '@/styles/breakpoints'
 import {
-    faFacebookF,
-    faInstagram,
-    faYoutube,
+  faFacebookF,
+  faInstagram,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { forwardRef } from 'react'
@@ -20,10 +20,12 @@ import styled from 'styled-components'
 const Section = styled(Flex)`
   padding: ${(props) => props.theme.spacing.extraLarge} 0;
 `
+
 const Container = styled(Box)`
   float: none;
   width: 100%;
 `
+
 const ImageContainer = styled(Flex)`
   float: left;
   width: 32%;
@@ -31,16 +33,12 @@ const ImageContainer = styled(Flex)`
   margin-right: ${(props) => props.theme.spacing.regular};
   margin-bottom: ${(props) => props.theme.spacing.regular};
 
-  ${desktop`
-    width: 40%;
-    max-width: 680px;
-    `}
-
-  ${laptop`
-    width: 50%;
+  ${tablet`
+    width: fit-content;
     margin-bottom: 0;
   `}
 `
+
 const Img = styled(Image)`
   object-fit: cover;
   border-radius: ${(props) => props.theme.borderRadius.regular};
@@ -68,6 +66,7 @@ export const FounderSection = forwardRef<HTMLDivElement>((_, ref) => {
         <ImageContainer $alignItems='flex-start'>
           <Img
             $width='100%'
+            $height='100%'
             alt='Artist drumming'
             src={`${hostPrefix}${founder}`}
           />
@@ -81,6 +80,7 @@ export const FounderSection = forwardRef<HTMLDivElement>((_, ref) => {
             $size='semiMedium'
             $weight='normal'
             $color='secondary'
+            $margin='1rem 0'
             className='position'
           >
             {text.role}
@@ -88,7 +88,9 @@ export const FounderSection = forwardRef<HTMLDivElement>((_, ref) => {
           <Typography $size='semiMedium' $weight='normal' $color='secondary'>
             {text.descriptionFirst}
           </Typography>
-          <Typography>{text.descriptionSecond}</Typography>
+          <Typography $size='semiMedium' $weight='normal' $color='secondary'>
+            {text.descriptionSecond}
+          </Typography>
           <Flex $direction='column' $justifyContent='center' $width='100%'>
             <Box $margin='1.5rem 0'>
               <Typography>
