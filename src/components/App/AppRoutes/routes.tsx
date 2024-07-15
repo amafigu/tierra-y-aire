@@ -1,6 +1,6 @@
 import { ROUTES } from '@/constants/routes'
 import { About } from '@/pages/About'
-import Concerts from '@/pages/Concerts'
+import { Concerts } from '@/pages/Concerts'
 import { Home } from '@/pages/Home'
 import { PageNotFound } from '@/pages/PageNotFound'
 import { EnsembleCompositionCourses } from '@/pages/courses/EnsembleCompositionCourses'

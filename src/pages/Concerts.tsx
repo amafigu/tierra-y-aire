@@ -1,12 +1,11 @@
 import { Button } from '@/components/ui/Button'
 import { Flex } from '@/components/ui/Flex'
 import { Typography } from '@/components/ui/Typography'
-import { GET_CONCERTS } from '@/graphql/queries'
+import { useConcerts } from '@/hooks/useConcerts'
 import { useTranslate } from '@/hooks/useTranslate'
 import { tablet } from '@/styles/breakpoints'
 import { Concert } from '@/types/Concert'
 import { formatDate, titleCase } from '@/utils/utils'
-import { useQuery } from '@apollo/client'
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import { styled } from 'styled-components'
@@ -72,8 +71,8 @@ const ConcertButton = styled(Button)`
     `}
 `
 
-const Concerts: FC = () => {
-  const { loading, error, data } = useQuery(GET_CONCERTS)
+export const Concerts: FC = () => {
+  const { loading, error, data } = useConcerts()
   const { translate } = useTranslate()
   const text = translate.pages.concerts
   let sortedConcerts = []
@@ -139,5 +138,3 @@ const Concerts: FC = () => {
     </Container>
   )
 }
-
-export default Concerts
